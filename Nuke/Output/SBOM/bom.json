@@ -1,0 +1,28 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:2c770f16-9945-4da6-b61c-ccbb1bcebc43",
+  "version": 1,
+  "metadata": {
+    "tools": [
+      {
+        "vendor": "CycloneDX",
+        "name": "CycloneDX module for .NET",
+        "version": "2.8.1.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "D:\\Repositories\\Utilities\\Kinderworx.Utilities.BuildUtilities@0.0.0",
+      "name": "D:\\Repositories\\Utilities\\Kinderworx.Utilities.BuildUtilities",
+      "version": "0.0.0"
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "D:\\Repositories\\Utilities\\Kinderworx.Utilities.BuildUtilities@0.0.0",
+      "dependsOn": []
+    }
+  ]
+}

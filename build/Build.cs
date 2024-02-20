@@ -21,6 +21,7 @@ using CliWrap.Buffered;
 using Kinderworx.Utilities.BuildUtilities;
 using Nuke.Common.Git;
 using Nuke.Common.Tools.GitHub;
+using System.Threading.Tasks;
 
 class Build : NukeBuild
 {
@@ -50,9 +51,24 @@ class Build : NukeBuild
     [Solution]
     readonly Solution Sln;
 
+    #region Project variables
 
-    public string utilsProject =  Sln.Name;
+    /// <summary>
+    /// Path to the util csproj.
+    /// </summary>
+    public string utilsProjectPath { get; private set; }
+
+    /// <summary>
+    /// Utils project directory.
+    /// </summary>
+    public string utilsProjectDir { get; set;  }
+
+    public string utilsProjectName { get; private set; }
+
+    #endregion
+
     public string OctopusVersion { get; private set; }
+
     public string CloudBuildNo { get; private set; }
 
     /// <summary>
@@ -60,15 +76,11 @@ class Build : NukeBuild
     /// </summary>
     public string CodeCoverage { get; private set; }
 
-    /// <summary>
-    ///
-    /// </summary>
-    public string ProjectName { get; private set; }
+
 
     public string Space = " ";
 
 
-    string projectName = "";
 
     #region NetCoreBuild
 
@@ -84,6 +96,10 @@ class Build : NukeBuild
 
     #region Secrets
 
+    /// <summary>
+    ///  ProGet server key.
+    /// </summary>
+    [Parameter][Secret]    readonly string NuGetApiKey;
 
     /// <summary>
     /// Codecov test token.
@@ -119,6 +135,11 @@ class Build : NukeBuild
 
 
     #region Paths
+
+    /// <summary>
+    ///
+    /// </summary>
+    readonly AbsolutePath UtilsDir = RootDirectory / "Utilities";
 
     /// <summary>
     /// s.
@@ -207,6 +228,8 @@ class Build : NukeBuild
 
     #region Remote Services
 
+    readonly string ProgetUrl = "";
+
     /// <summary>
     ///     DependencyTrack application URL.
     /// </summary>
@@ -230,6 +253,12 @@ class Build : NukeBuild
     /// Auto change log cmd for changelog creation.
     /// </summary>
     [PathVariable("auto-changelog")] readonly Tool AutoChangelogTool;
+
+    /// <summary>
+    ///     Octopus CLI.
+    /// </summary>
+    [PathVariable("dotnet-octo")]
+    readonly Tool DotnetOcto;
 
     /// <summary>
     ///  Dotnet-sonarscanner cli tool.
@@ -308,6 +337,12 @@ class Build : NukeBuild
 
 
     /// <summary>
+    ///     Git cli.
+    /// </summary>
+    [PathVariable("nuget")]
+    readonly Tool NugetCli;
+
+    /// <summary>
     ///  GGShield CLI for detecting secrets.
     /// </summary>
     [PathVariable("ggshield")]
@@ -342,7 +377,7 @@ class Build : NukeBuild
     #endregion
 
 
-    public static int Main () => Execute<Build>(x => x.Compile);
+    public static int Main () => Execute<Build>(x => x.PublishGitHubRelease);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
@@ -373,8 +408,10 @@ class Build : NukeBuild
         .After(SetPathsTarget)
         .Executes(() =>
         {
-            utilsProjectPath = Sln.GetProject(NupkgPath).Path;
-            utilsProject = Sln.GetProject(projectName).Path.ToString();
+            Log.Information(Sln.Name);
+            utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
+            utilsProjectPath = Sln.GetProject(utilsProjectName).Path;
+
         });
 
     /// <summary>
@@ -417,7 +454,7 @@ class Build : NukeBuild
         .DependsOn(SnykScan)
         .Executes(() =>
         {
-            DotNet("format");
+            DotnetFormatTool(utilsProjectPath + " -v diagnostic");
         });
 
 
@@ -467,12 +504,12 @@ class Build : NukeBuild
         .Executes(() =>
         {
             var nDependProj = RootDirectory.GlobFiles("*.ndproj").FirstOrDefault();
-
+            string ndependPath = Path.Combine(Artifacts, "NDepend.zip");
             NDependConsoleTool(string.Format(nDependProj + Space + @"/OutDir {0}", NDependOutput));
 
             if (IsServerBuild)
             {
-                BuildUtils.ZipDirectory(NDependOutput, Artifacts);
+                BuildUtils.ZipDirectory(NDependOutput, ndependPath);
             }
         });
 
@@ -485,7 +522,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            DotNet(@$"cyclonedx {utilsProject} -o {Sbom} -j -dgl");
+            DotNet(@$"cyclonedx {utilsProjectName} -o {Sbom} -j -dgl");
         });
 
     /// <summary>
@@ -499,7 +536,7 @@ class Build : NukeBuild
             var sbomPath = Sbom / "bom.json";
 
                 DTrackAudit(
-                    @$"-a -k {DTrackApiKey2} -n {BuildUtils.Helper(projectName)} -u {DependencyTrackUrl} -v {OctopusVersion} -i {sbomPath}");
+                    @$"-a -k {DTrackApiKey2} -n {BuildUtils.Helper(utilsProjectName)} -u {DependencyTrackUrl} -v {OctopusVersion} -i {sbomPath}");
         });
 
     /// <summary>
@@ -514,13 +551,15 @@ class Build : NukeBuild
             pvsfile = plogFile.ToString();
             File.Create(plogFile);
 
+            string pvsPath = Path.Combine(Artifacts, "PVSReport.zip");
+
             string sln = Sln.Path;
             PvsStudioTool($@"-t {sln} -o {pvsfile}");
             PlogConverter($@"-t FullHtml -o {PvsStudio} -n PVS-Log {pvsfile}");
 
                 if (IsServerBuild)
                 {
-                    BuildUtils.ZipDirectory(NDependOutput, Artifacts);
+                    BuildUtils.ZipDirectory(NDependOutput, pvsPath);
                 }
         });
 
@@ -533,7 +572,7 @@ class Build : NukeBuild
         .Executes(() =>
         {
             SonarscannerTool(
-                @$"begin /k:{BuildUtils.Helper(projectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey}");
+                @$"begin /k:{BuildUtils.Helper(utilsProjectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey}");
         });
 
     /// <summary>
@@ -553,14 +592,14 @@ class Build : NukeBuild
 
         .Executes(() =>
         {
-            DotNet($"restore {utilsProject}");
+            DotNet($"restore {utilsProjectName}");
         });
 
     Target Compile => _ => _
         .DependsOn(Restore)
         .Executes(() =>
         {
-                DotNet($"publish {utilsProject} -f {Framework} --self-contained {SelfContained} --output {PublishFolder}");
+                DotNet($"publish {utilsProjectName} -f {Framework} --self-contained {SelfContained} --output {PublishFolder}");
         });
 
 
@@ -627,7 +666,9 @@ class Build : NukeBuild
             }
 
             // This runs on Teamcity, using env vars.
-            if (IsServerBuild) Codecov($"-f {CoverletFile} -t {CODECOV_SECRET}", CoverletOutput.ToString());
+            if (IsServerBuild) {
+                Codecov($"-f {CoverletFile} -t {CODECOV_SECRET}", CoverletOutput.ToString());
+            }
         });
 
 
@@ -705,11 +746,11 @@ class Build : NukeBuild
         {
             if (IsLocalBuild)
             {
-                var dbDailyTasks = await Cli.Wrap("powershell")
+                var gitRepoName = await Cli.Wrap("powershell")
                     .WithArguments(new[] { "Split-Path -Leaf (git remote get-url origin)" })
                     .ExecuteBufferedAsync();
 
-                var repoName = dbDailyTasks.StandardOutput.TrimEnd();
+                var repoName = gitRepoName.StandardOutput.TrimEnd();
 
                 var gitCommand = "git";
                 var gitAddArgument = @"add -A";
@@ -717,7 +758,6 @@ class Build : NukeBuild
                 var gitPushArgument =
                     $@"push https://{GitHubToken}@github.com/{Repository.GetGitHubOwner()}/{repoName}";
 
-                Log.Information(gitPushArgument);
                 try
                 {
                     Process.Start(gitCommand, gitAddArgument).WaitForExit();
@@ -729,6 +769,21 @@ class Build : NukeBuild
                }
         });
 
+    Target BuildNupkg => _ => _
+    .DependsOn(PushToGitHub)
+    .Description("Creates Nuget package, using dotnet-octo")
+    .AssuredAfterFailure()
+    .Executes(() =>
+    {
+        if (IsLocalBuild)
+            DotnetOcto(
+                $"pack ./ --id {utilsProjectName}  --version {OctopusVersion} --outFolder {NupkgPath}  --overwrite",
+                PublishFolder);
+
+        if (IsServerBuild)
+            DotnetOcto($"pack ./ --id {utilsProjectName}  --version {CloudBuildNo} --outFolder {NupkgPath}  --overwrite",
+                PublishFolder);
+    });
 
     /// <summary>
     ///     Push the package to ProGet.
@@ -744,14 +799,14 @@ class Build : NukeBuild
 
             if (IsServerBuild)
                 NugetCli(
-                    $"push {NupkgPath / $"{ProjectName}.{CloudBuildNo}.nupkg"} {NuGetApiKey} -src {ProgetUrl}");
+                    $"push {NupkgPath / $"{utilsProjectName}.{CloudBuildNo}.nupkg"} {NuGetApiKey} -src {ProgetUrl}");
         });
 
     /// <summary>
     ///     Publish GitHub release, for main / master releases.
     /// </summary>
     Target PublishGitHubRelease => _ => _
-        .DependsOn(CreateOctopusRelease)
+        .DependsOn(PushToNuGet)
         .AssuredAfterFailure()
         .Description("Create a release in GitHub")
         .Requires(() => GitHubToken)

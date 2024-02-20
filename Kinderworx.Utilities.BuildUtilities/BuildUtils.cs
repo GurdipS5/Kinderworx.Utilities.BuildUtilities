@@ -41,7 +41,18 @@ namespace Kinderworx.Utilities.BuildUtilities
         /// </summary>
         public static void ZipDirectory(string directory, string zipPath)
         {
-            ZipFile.CreateFromDirectory(directory, zipPath);
+            if (Directory.Exists(directory))
+            {
+                ZipFile.CreateFromDirectory(directory, zipPath);
+            }
+
+            else
+            {
+                Directory.CreateDirectory(directory);
+                throw new DirectoryNotFoundException();
+            }
+
+
         }
 
         /// <summary>
@@ -70,9 +81,8 @@ namespace Kinderworx.Utilities.BuildUtilities
             if (match.Success)
             {
                 // Remove the part up to the first number
-                string octopusVersion = lines[2].Substring(match.Index).Trim();
-                Log.Information(octopusVersion);
-                return octopusVersion;
+                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();
+                return AssemblyInformationalVersion;
             }
 
             return "";

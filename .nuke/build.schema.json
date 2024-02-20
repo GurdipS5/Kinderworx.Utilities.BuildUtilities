@@ -6,6 +6,10 @@
     "build": {
       "type": "object",
       "properties": {
+        "CODECOV_SECRET": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
         "Configuration": {
           "type": "string",
           "description": "Configuration to build - Default is 'Debug' (local) or 'Release' (server)",
@@ -17,6 +21,14 @@
         "Continue": {
           "type": "boolean",
           "description": "Indicates to continue a previously failed build attempt"
+        },
+        "DTrackApiKey2": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
+        "GitHubToken": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
         },
         "Help": {
           "type": "boolean",
@@ -47,6 +59,10 @@
           "type": "boolean",
           "description": "Disables displaying the NUKE logo"
         },
+        "NuGetApiKey": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
         "Partition": {
           "type": "string",
           "description": "Partition to use on CI"
@@ -62,6 +78,10 @@
             "type": "string"
           }
         },
+        "ReportGeneratorLicense": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
         "Root": {
           "type": "string",
           "description": "Root directory during build execution"
@@ -72,19 +92,39 @@
           "items": {
             "type": "string",
             "enum": [
+              "AmendChangelogTarget",
+              "BuildNupkg",
               "Clean",
               "Compile",
-              "Restore"
+              "CreateDocFx",
+              "CycloneDx",
+              "EndSonarscanTarget",
+              "PublishGitHubRelease",
+              "PushToDTrack",
+              "PushToGitHub",
+              "PushToNuGet",
+              "Restore",
+              "RunDotnetFormatTarget",
+              "RunDotnetOutdated",
+              "RunNDepend",
+              "RunPvsStudio",
+              "RunQodanaScan",
+              "RunReportGeneratorTarget",
+              "RunTests",
+              "SecretScan",
+              "SetPathsTarget",
+              "SetVariablesTarget",
+              "SetVersionTarget",
+              "SnykAuth",
+              "SnykScan",
+              "StartSonarscan",
+              "UploadToCodeCov"
             ]
           }
         },
-        "ReportGeneratorLicense": {
+        "Sln": {
           "type": "string",
-          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
-        },
-        "CODECOV_SECRET": {
-          "type": "string",
-          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+          "description": "Path to a solution file that is automatically loaded"
         },
         "SNYK_TOKEN": {
           "type": "string",
@@ -100,9 +140,33 @@
           "items": {
             "type": "string",
             "enum": [
+              "AmendChangelogTarget",
+              "BuildNupkg",
               "Clean",
               "Compile",
-              "Restore"
+              "CreateDocFx",
+              "CycloneDx",
+              "EndSonarscanTarget",
+              "PublishGitHubRelease",
+              "PushToDTrack",
+              "PushToGitHub",
+              "PushToNuGet",
+              "Restore",
+              "RunDotnetFormatTarget",
+              "RunDotnetOutdated",
+              "RunNDepend",
+              "RunPvsStudio",
+              "RunQodanaScan",
+              "RunReportGeneratorTarget",
+              "RunTests",
+              "SecretScan",
+              "SetPathsTarget",
+              "SetVariablesTarget",
+              "SetVersionTarget",
+              "SnykAuth",
+              "SnykScan",
+              "StartSonarscan",
+              "UploadToCodeCov"
             ]
           }
         },
