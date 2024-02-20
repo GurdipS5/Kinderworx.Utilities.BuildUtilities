@@ -6,5 +6,6 @@
   "NugetApiKey": "v1:kztZqgcc3nnehEzXYL1G1ui47zUprISn9zuktAeEQiarZax79fxRgHN7jra/+Xk+",
   "GitHubToken": "v1:Fm2baGrDCfs4AfyoSMIu7TdeJ5B9Uofo5y0/RyYfkzonkJXSscNFNkxMLv1hVgz+",
   "CODECOV_SECRET": "v1:v1nJtJb4oo+zmUgqaNbJgFjAGlF0zJPfq0agkgt0YmU=",
-  "SonarKey": "v1:fVjdD2t4nX7S2fZf95O8sfeSUjfg3JIrLNVD1iZP7ynm3V1KUscAkuhmboMmvD+c"
+  "SonarKey": "v1:fVjdD2t4nX7S2fZf95O8sfeSUjfg3JIrLNVD1iZP7ynm3V1KUscAkuhmboMmvD+c",
+  "DTrackApiKey2": "v1:YT03BOOA4bEk0Gc2NDusU5MOayUxZSM5Z/kkuBuxS24cx/LqLhTwSJ7ccdml9mqQ"
 }
