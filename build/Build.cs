@@ -414,6 +414,7 @@ class Build : NukeBuild
 
             Log.Information(utilsProjectName);
             Log.Information(utilsProjectPath);
+            Log.Information(Solution.GetProject(utilsProjectName).Path.Parent);
         });
 
     /// <summary>
