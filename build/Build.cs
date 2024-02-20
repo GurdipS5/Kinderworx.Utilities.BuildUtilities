@@ -414,7 +414,7 @@ class Build : NukeBuild
 
             Log.Information(utilsProjectName);
             Log.Information(utilsProjectPath);
-            Log.Information(Solution.GetProject(utilsProjectName).Path.Parent);
+            Log.Information(Solution.GetProject(utilsProjectName).Path);
         });
 
     /// <summary>
@@ -455,6 +455,7 @@ class Build : NukeBuild
     /// </summary>
     Target RunDotnetFormatTarget => _ => _
         .DependsOn(SnykScan)
+        .AssuredAfterFailure()
         .Executes(() =>
         {
             DotnetFormatTool(utilsProjectPath + " -v diagnostic");
