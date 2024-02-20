@@ -408,10 +408,12 @@ class Build : NukeBuild
         .After(SetPathsTarget)
         .Executes(() =>
         {
-            Log.Information(Solution.Name);
-            //utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
-            //utilsProjectPath = Sln.GetProject(utilsProjectName).Path;
 
+            utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
+            utilsProjectPath = Solution.GetProject(utilsProjectName).Path;
+
+            Log.Information(utilsProjectName);
+            Log.Information(utilsProjectPath);
         });
 
     /// <summary>
