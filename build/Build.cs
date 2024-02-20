@@ -49,7 +49,7 @@ class Build : NukeBuild
     ///  Visual Studio solution object.
     /// </summary>
     [Solution]
-    readonly Solution Sln;
+    readonly Solution Solution;
 
     #region Project variables
 
@@ -408,9 +408,9 @@ class Build : NukeBuild
         .After(SetPathsTarget)
         .Executes(() =>
         {
-            Log.Information(Sln.Name);
-            utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
-            utilsProjectPath = Sln.GetProject(utilsProjectName).Path;
+            Log.Information(Solution.Name);
+            //utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
+            //utilsProjectPath = Sln.GetProject(utilsProjectName).Path;
 
         });
 
@@ -505,7 +505,7 @@ class Build : NukeBuild
         {
             var nDependProj = RootDirectory.GlobFiles("*.ndproj").FirstOrDefault();
             string ndependPath = Path.Combine(Artifacts, "NDepend.zip");
-            NDependConsoleTool(string.Format(nDependProj + Space + @"/OutDir {0}", NDependOutput));
+            NDependConsoleTool(string.Format(nDependProj + Space + "/" + "OutDir {0}", NDependOutput));
 
             if (IsServerBuild)
             {
@@ -553,7 +553,7 @@ class Build : NukeBuild
 
             string pvsPath = Path.Combine(Artifacts, "PVSReport.zip");
 
-            string sln = Sln.Path;
+            string sln = Solution.Path;
             PvsStudioTool($@"-t {sln} -o {pvsfile}");
             PlogConverter($@"-t FullHtml -o {PvsStudio} -n PVS-Log {pvsfile}");
 
