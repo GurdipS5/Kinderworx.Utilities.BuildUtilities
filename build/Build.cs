@@ -169,6 +169,11 @@ class Build : NukeBuild
     /// <summary>
     ///  Output of coverlet code  coverage report.
     /// </summary>
+    readonly AbsolutePath QodanaCache = @"D:\QodanaCache";
+
+    /// <summary>
+    ///  Output of coverlet code  coverage report.
+    /// </summary>
     readonly AbsolutePath CoverletOutput = RootDirectory / "Nuke" / "Output" / "Coverlet";
 
     /// <summary>
@@ -507,7 +512,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport}");
+            Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport} --cacheDir {QodanaCache}");
         });
 
     /// <summary>
@@ -547,21 +552,18 @@ class Build : NukeBuild
     Target SetVersionTarget => _ => _
         .DependsOn(CycloneDx)
         .AssuredAfterFailure()
-        .Executes(() =>
+        .Executes(async () =>
         {
             if (IsLocalBuild || (IsServerBuild && !Repository.IsOnMainOrMasterBranch()))
             {
-                var stdOutBuffer = new StringBuilder();
-                var stdErrBuffer = new StringBuilder();
 
-                var dbDailyTasks = Cli.Wrap("powershell")
-                    .WithArguments(new[] { "nbgv get-version | convertto-json" })
-                    .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
-                    .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
-                    .WithWorkingDirectory(RootDirectory)
-                    .ExecuteBufferedAsync();
+                var dbDailyTasks = await Cli.Wrap("powershell")
+                  .WithArguments(new string[] { "nbgv get-version | ConvertTo-JSON" })
+                  .ExecuteBufferedAsync();
 
-                OctopusVersion = BuildUtils.ExtractVersion(stdOutBuffer, stdErrBuffer);
+                OctopusVersion = BuildUtils.ExtractVersion(dbDailyTasks.StandardOutput);
+
+                Log.Information(OctopusVersion);
             }
 
             // When the code is merged.

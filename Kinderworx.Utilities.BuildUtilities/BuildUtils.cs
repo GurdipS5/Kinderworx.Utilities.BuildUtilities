@@ -61,11 +61,8 @@ namespace Kinderworx.Utilities.BuildUtilities
         /// <param name="stdOutBuffer"></param>
         /// <param name="stdErrBuffer"></param>
         /// <returns></returns>
-        public static string ExtractVersion(StringBuilder stdOutBuffer, StringBuilder stdErrBuffer)
+        public static string ExtractVersion(string stdOut)
         {
-
-            var stdOut = stdOutBuffer.ToString();
-            var stdErr = stdErrBuffer.ToString();
 
             var withoutSpeechMarks = stdOut.Replace("\"", "");
 
@@ -75,17 +72,11 @@ namespace Kinderworx.Utilities.BuildUtilities
 
             var lines = withoutSquareBrackets.Split(',');
 
-            var match = Regex.Match(lines[2], @"\d");
+            string s = lines[2];
 
-            // Check if a number is found
-            if (match.Success)
-            {
-                // Remove the part up to the first number
-                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();
-                return AssemblyInformationalVersion;
-            }
+            string modifiedString = s.Replace("AssemblyInformationalVersion: ", string.Empty).Trim();
 
-            return "";
+            return modifiedString;
 
         }
     }
