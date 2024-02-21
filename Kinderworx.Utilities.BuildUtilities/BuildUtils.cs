@@ -56,7 +56,7 @@ namespace Kinderworx.Utilities.BuildUtilities
         }
 
         /// <summary>
-        /// Returns the "" version from Nerdbank.
+        /// Returns the assembly informational version from Nerdbank.
         /// </summary>
         /// <param name="stdOutBuffer"></param>
         /// <param name="stdErrBuffer"></param>

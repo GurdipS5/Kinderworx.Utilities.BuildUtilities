@@ -540,11 +540,50 @@ class Build : NukeBuild
             DotNet(@$"cyclonedx {utilsProjectName} -o {Sbom} -j -dgl");
         });
 
+
+    /// <summary>
+    /// Versions the project using Nerdbank.
+    /// </summary>
+    Target SetVersionTarget => _ => _
+        .DependsOn(CycloneDx)
+        .AssuredAfterFailure()
+        .Executes(() =>
+        {
+            if (IsLocalBuild || (IsServerBuild && !Repository.IsOnMainOrMasterBranch()))
+            {
+                var stdOutBuffer = new StringBuilder();
+                var stdErrBuffer = new StringBuilder();
+
+                var dbDailyTasks = Cli.Wrap("powershell")
+                    .WithArguments(new[] { "nbgv get-version | convertto-json" })
+                    .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
+                    .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
+                    .WithWorkingDirectory(RootDirectory)
+                    .ExecuteBufferedAsync();
+
+                OctopusVersion = BuildUtils.ExtractVersion(stdOutBuffer, stdErrBuffer);
+            }
+
+            // When the code is merged.
+            if (IsServerBuild)
+            {
+                var c =
+                    new NerdbankGitVersioningCloudSettings();
+
+                c.SetProcessWorkingDirectory(RootDirectory);
+
+                NerdbankGitVersioningTasks.NerdbankGitVersioningCloud(c);
+
+                CloudBuildNo = NerdbankVersioning.CloudBuildNumber;
+
+            }
+        });
+
     /// <summary>
     ///     Push to Dependency-Track.
     /// </summary>
     Target PushToDTrack => _ => _
-        .DependsOn(CycloneDx)
+        .DependsOn(SetVersionTarget)
         .AssuredAfterFailure()
         .Executes(() =>
         {
@@ -700,49 +739,12 @@ class Build : NukeBuild
         });
 
 
-    /// <summary>
-    /// Versions the project using Nerdbank.
-    /// </summary>
-    Target SetVersionTarget => _ => _
-        .DependsOn(EndSonarscanTarget)
-        .AssuredAfterFailure()
-        .Executes(() =>
-        {
-            if (IsLocalBuild || (IsServerBuild && !Repository.IsOnMainOrMasterBranch()))
-            {
-                var stdOutBuffer = new StringBuilder();
-                var stdErrBuffer = new StringBuilder();
-
-                var dbDailyTasks = Cli.Wrap("powershell")
-                    .WithArguments(new[] { "nbgv get-version | convertto-json" })
-                    .WithStandardOutputPipe(PipeTarget.ToStringBuilder(stdOutBuffer))
-                    .WithStandardErrorPipe(PipeTarget.ToStringBuilder(stdErrBuffer))
-                    .WithWorkingDirectory(RootDirectory)
-                    .ExecuteBufferedAsync();
-
-                BuildUtils.ExtractVersion(stdOutBuffer, stdErrBuffer);
-            }
-
-            // When the code is merged.
-            if (IsServerBuild)
-            {
-                var c =
-                    new NerdbankGitVersioningCloudSettings();
-
-                c.SetProcessWorkingDirectory(RootDirectory);
-
-                NerdbankGitVersioningTasks.NerdbankGitVersioningCloud(c);
-
-                CloudBuildNo = NerdbankVersioning.CloudBuildNumber;
-
-            }
-        });
 
     /// <summary>
     ///  Set changelog file.
     /// </summary>
     Target AmendChangelogTarget => _ => _
-        .DependsOn(SetVersionTarget)
+        .DependsOn(EndSonarscanTarget)
         .Description("Creates a changelog of the current commit.")
         .AssuredAfterFailure()
         .Executes(() =>

@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-21T01:46:55.0974738Z",
+          "startTimeUtc": "2024-02-21T01:50:04.1405583Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-21T01:46:58.2887342Z",
+              "timeUtc": "2024-02-21T01:50:07.638232Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "9408b7d30bf245638ff9df0936f82939ad8a86b4",
+          "revisionId": "4ef330703495cd31e33eb5eb526107ed34f93aa6",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-21",
-        "guid": "bbbdc65e-1729-481b-a109-fc2d683cb46e",
+        "guid": "4b851590-5cd5-4060-88c5-e5f508a42f79",
         "properties": {
           "jobUrl": ""
         }
@@ -261,7 +261,7 @@
                   "region": {
                     "startLine": 81.0,
                     "startColumn": 13.0,
-                    "charOffset": 2502.0,
+                    "charOffset": 2522.0,
                     "charLength": 2.0,
                     "snippet": {
                       "text": "if"
@@ -271,7 +271,7 @@
                   "contextRegion": {
                     "startLine": 79.0,
                     "startColumn": 1.0,
-                    "charOffset": 2445.0,
+                    "charOffset": 2465.0,
                     "charLength": 150.0,
                     "snippet": {
                       "text": "\r\n            // Check if a number is found\r\n            if (match.Success)\r\n            {\r\n                // Remove the part up to the first number\r"
@@ -288,7 +288,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "9e2fff8e7bbe090808d2b3c58fc3f964570d7dc12fe70b52c066d6b6ef349da7"
+              "equalIndicator/v1": "136b7be523925ba06e71445e88b33ee66a87a9c7e033422e767d78248e83ca08"
             },
             "properties": {
               "ideaSeverity": "TYPO",
@@ -393,6 +393,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "54b83cdb4895be563a82f3825b44376d21f09c122be87c5115644129fbca22e1"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'OctopusVersion' can be made private",
+              "markdown": "Property 'OctopusVersion' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 70.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1878.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 68.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1856.0,
+                    "charLength": 129.0,
+                    "snippet": {
+                      "text": "    #endregion\r\n\r\n    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "8f4f0b0a3c7de52ecd53f5fbd1ab6152bd0b06b4a65dcc38a68e26def1a71ef9"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -521,7 +573,7 @@
                   "region": {
                     "startLine": 84.0,
                     "startColumn": 64.0,
-                    "charOffset": 2659.0,
+                    "charOffset": 2679.0,
                     "charLength": 9.0,
                     "snippet": {
                       "text": "Substring"
@@ -531,7 +583,7 @@
                   "contextRegion": {
                     "startLine": 82.0,
                     "startColumn": 1.0,
-                    "charOffset": 2522.0,
+                    "charOffset": 2542.0,
                     "charLength": 237.0,
                     "snippet": {
                       "text": "            {\r\n                // Remove the part up to the first number\r\n                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();\r\n                return AssemblyInformationalVersion;\r\n            }\r"
@@ -548,7 +600,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "5e04ec99ccf4dac8fed765bd9f9d8142bdab00f973fedb838d0281f1c18a6849"
+              "equalIndicator/v1": "9329a2a03a1ca7bd22e8c6096523a913b5f6be6c96a1971bed0011f1f75baecd"
             },
             "properties": {
               "ideaSeverity": "TYPO",
@@ -573,7 +625,7 @@
                   "region": {
                     "startLine": 78.0,
                     "startColumn": 25.0,
-                    "charOffset": 2414.0,
+                    "charOffset": 2434.0,
                     "charLength": 28.0,
                     "snippet": {
                       "text": "Regex.Match(lines[2], @\"\\d\")"
@@ -583,7 +635,7 @@
                   "contextRegion": {
                     "startLine": 76.0,
                     "startColumn": 1.0,
-                    "charOffset": 2329.0,
+                    "charOffset": 2349.0,
                     "charLength": 160.0,
                     "snippet": {
                       "text": "            var lines = withoutSquareBrackets.Split(',');\r\n\r\n            var match = Regex.Match(lines[2], @\"\\d\");\r\n\r\n            // Check if a number is found\r"
@@ -600,7 +652,59 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "d8d614e3351fa6403793933b538c8c5a942eb760a4f4a815f602c050b7f7bad1"
+              "equalIndicator/v1": "6240e2d167275ef8194c9d25a9e4ac48417fc94c714cc4477ac63316256d7502"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SuggestVarOrType_BuiltInTypes",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'var' (built-in types)",
+              "markdown": "Use 'var' (built-in types)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 84.0,
+                    "startColumn": 17.0,
+                    "charOffset": 2632.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "string"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 82.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2542.0,
+                    "charLength": 237.0,
+                    "snippet": {
+                      "text": "            {\r\n                // Remove the part up to the first number\r\n                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();\r\n                return AssemblyInformationalVersion;\r\n            }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "2a19ea4ff5ea3fb3673a9355d0136c619d4510e267b83e4cc743b29823856528"
             },
             "properties": {
               "ideaSeverity": "TYPO",
@@ -705,58 +809,6 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "3da35264287bb6407ebdb142529d612698da1e3f08aec6bdfff863a9e63e1b7a"
-            },
-            "properties": {
-              "ideaSeverity": "TYPO",
-              "qodanaSeverity": "Low"
-            }
-          },
-          {
-            "ruleId": "SuggestVarOrType_BuiltInTypes",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Use 'var' (built-in types)",
-              "markdown": "Use 'var' (built-in types)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 84.0,
-                    "startColumn": 17.0,
-                    "charOffset": 2612.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "string"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 82.0,
-                    "startColumn": 1.0,
-                    "charOffset": 2522.0,
-                    "charLength": 237.0,
-                    "snippet": {
-                      "text": "            {\r\n                // Remove the part up to the first number\r\n                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();\r\n                return AssemblyInformationalVersion;\r\n            }\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "4a414a3abf057e778427f0c7540c72e37f04a64b23de2e1e862575d7b3ebcae9"
             },
             "properties": {
               "ideaSeverity": "TYPO",
@@ -913,58 +965,6 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "5e69a9419baa85b0adf8fd8756beda1bc2d678ceacf1ccf370e8ec4305c869be"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "UnusedMethodReturnValue.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Method 'ExtractVersion' return value is never used",
-              "markdown": "Method 'ExtractVersion' return value is never used"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 64.0,
-                    "startColumn": 23.0,
-                    "charOffset": 1913.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "string"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 62.0,
-                    "startColumn": 1.0,
-                    "charOffset": 1809.0,
-                    "charLength": 195.0,
-                    "snippet": {
-                      "text": "        /// <param name=\"stdErrBuffer\"></param>\r\n        /// <returns></returns>\r\n        public static string ExtractVersion(StringBuilder stdOutBuffer, StringBuilder stdErrBuffer)\r\n        {\r\n\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "f3ecdd7042b15d75c9f91e4e82c6af6574a38f27a105c616274c86e57f22c4f8"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
