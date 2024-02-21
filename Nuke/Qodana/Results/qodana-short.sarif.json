@@ -1,0 +1,984 @@
+{
+  "$schema": "https://raw.githubusercontent.com/schemastore/schemastore/master/src/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "QDNET",
+          "fullName": "Qodana for .NET",
+          "version": "233.13013.23.93",
+          "rules": [],
+          "taxa": [],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        },
+        "extensions": []
+      },
+      "invocations": [
+        {
+          "startTimeUtc": "2024-02-21T01:46:55.0974738Z",
+          "exitCode": 0,
+          "toolExecutionNotifications": [
+            {
+              "message": {
+                "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
+              },
+              "level": "error",
+              "timeUtc": "2024-02-21T01:46:58.2887342Z",
+              "properties": {
+                "qodanaKind": "sanityFailure"
+              }
+            }
+          ],
+          "executionSuccessful": true
+        }
+      ],
+      "language": "en-US",
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
+          "revisionId": "9408b7d30bf245638ff9df0936f82939ad8a86b4",
+          "branch": "master",
+          "properties": {
+            "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
+            "lastAuthorName": "GurdipS5",
+            "vcsType": "Git",
+            "lastAuthorEmail": "gurdip.sira@gmail.com"
+          }
+        }
+      ],
+      "results": [],
+      "automationDetails": {
+        "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-21",
+        "guid": "bbbdc65e-1729-481b-a109-fc2d683cb46e",
+        "properties": {
+          "jobUrl": ""
+        }
+      },
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ],
+      "properties": {
+        "qodana.sanity.results": [
+          {
+            "ruleId": "RiderSolutionErrorsInspection",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "Please create a 'qodana.yaml' file in the repo root and provide compilation commands in the 'bootstrap:' section. You can leave the file empty if Qodana will be running on pre-built sources. If the project is not built beforehand, the analysis may yield incorrect results.",
+              "markdown": "Please create a 'qodana.yaml' file in the repo root and provide compilation commands in the 'bootstrap:' section.  \nYou can leave the file empty if Qodana will be running on pre-built sources.  \nIf the project is not built beforehand, the analysis may yield incorrect results."
+            },
+            "locations": [
+              {}
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "1b7b856e0ddf9b61f00ef3a9c80ac8c385a4de98c6a0b5d3c1c104939a7cc50f"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          }
+        ],
+        "qodana.promo.results": [
+          {
+            "ruleId": "ArrangeNamespaceBody",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Convert to file-scoped namespace",
+              "markdown": "Convert to file-scoped namespace"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 9.0,
+                    "startColumn": 1.0,
+                    "charOffset": 195.0,
+                    "charLength": 1.0,
+                    "snippet": {
+                      "text": "{"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 7.0,
+                    "startColumn": 1.0,
+                    "charOffset": 146.0,
+                    "charLength": 94.0,
+                    "snippet": {
+                      "text": "\r\nnamespace Kinderworx.Utilities.BuildUtilities\r\n{\r\n    public static class BuildUtils\r\n    {\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "16175452daac68012db8b6e7418ae6889a696e2622ee7794a333f1ab3be38921"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "ArrangeNamespaceBody",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Convert to file-scoped namespace",
+              "markdown": "Convert to file-scoped namespace"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/Kinderworx.Utilities.BuildUtilities.Tests/UnitTest1.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 2.0,
+                    "startColumn": 1.0,
+                    "charOffset": 53.0,
+                    "charLength": 1.0,
+                    "snippet": {
+                      "text": "{"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 1.0,
+                    "startColumn": 1.0,
+                    "charOffset": 0.0,
+                    "charLength": 90.0,
+                    "snippet": {
+                      "text": "namespace Kinderworx.Utilities.BuildUtilities.Tests\r\n{\r\n    public class UnitTest1\r\n    {\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities.Tests",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "873eaed8ce05f95104e4c1ae7abd5532d576a22a22257a44491498ee63d52244"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "FieldCanBeMadeReadOnly.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field can be made readonly",
+              "markdown": "Field can be made readonly"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 81.0,
+                    "startColumn": 19.0,
+                    "charOffset": 2114.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "Space"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 79.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2092.0,
+                    "charLength": 39.0,
+                    "snippet": {
+                      "text": "\r\n\r\n    public string Space = \" \";\r\n\r\n\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "e30706b0671f4da23b9439ec4c38b87f2ad875f769972dc82bd78e5560ab4da0"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "InvertIf",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Invert 'if' statement to reduce nesting",
+              "markdown": "Invert 'if' statement to reduce nesting"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 81.0,
+                    "startColumn": 13.0,
+                    "charOffset": 2502.0,
+                    "charLength": 2.0,
+                    "snippet": {
+                      "text": "if"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 79.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2445.0,
+                    "charLength": 150.0,
+                    "snippet": {
+                      "text": "\r\n            // Check if a number is found\r\n            if (match.Success)\r\n            {\r\n                // Remove the part up to the first number\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "9e2fff8e7bbe090808d2b3c58fc3f964570d7dc12fe70b52c066d6b6ef349da7"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'utilsProjectName' can be made private",
+              "markdown": "Property 'utilsProjectName' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 66.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1800.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 64.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1744.0,
+                    "charLength": 127.0,
+                    "snippet": {
+                      "text": "    public string utilsProjectDir { get; set;  }\r\n\r\n    public string utilsProjectName { get; private set; }\r\n\r\n    #endregion\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "06eeec0efcfeb751553f8c0fad181c67aeaee3b3fd337e1f540c1f64232473b4"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field 'Space' can be made private",
+              "markdown": "Field 'Space' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 81.0,
+                    "startColumn": 5.0,
+                    "charOffset": 2100.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 79.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2092.0,
+                    "charLength": 39.0,
+                    "snippet": {
+                      "text": "\r\n\r\n    public string Space = \" \";\r\n\r\n\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "54b83cdb4895be563a82f3825b44376d21f09c122be87c5115644129fbca22e1"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'utilsProjectPath' can be made private",
+              "markdown": "Property 'utilsProjectPath' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 59.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1615.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 57.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1557.0,
+                    "charLength": 132.0,
+                    "snippet": {
+                      "text": "    /// Path to the util csproj.\r\n    /// </summary>\r\n    public string utilsProjectPath { get; private set; }\r\n\r\n    /// <summary>\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "92defcf855fffc135c5b08f8ec0a26758c6f814cb72f2c7278e1a55696fc79ea"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'CloudBuildNo' can be made private",
+              "markdown": "Property 'CloudBuildNo' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 72.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1936.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 70.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1874.0,
+                    "charLength": 132.0,
+                    "snippet": {
+                      "text": "    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r\n\r\n    /// <summary>\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "d52a1137ce325a94f043b253f67e3324bd0e3dc6b6e6c48f614eb0ba11dd9ec9"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "ReplaceSubstringWithRangeIndexer",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use range indexer",
+              "markdown": "Use range indexer"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 84.0,
+                    "startColumn": 64.0,
+                    "charOffset": 2659.0,
+                    "charLength": 9.0,
+                    "snippet": {
+                      "text": "Substring"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 82.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2522.0,
+                    "charLength": 237.0,
+                    "snippet": {
+                      "text": "            {\r\n                // Remove the part up to the first number\r\n                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();\r\n                return AssemblyInformationalVersion;\r\n            }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "5e04ec99ccf4dac8fed765bd9f9d8142bdab00f973fedb838d0281f1c18a6849"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SYSLIB1045",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time.",
+              "markdown": "Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time."
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 78.0,
+                    "startColumn": 25.0,
+                    "charOffset": 2414.0,
+                    "charLength": 28.0,
+                    "snippet": {
+                      "text": "Regex.Match(lines[2], @\"\\d\")"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 76.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2329.0,
+                    "charLength": 160.0,
+                    "snippet": {
+                      "text": "            var lines = withoutSquareBrackets.Split(',');\r\n\r\n            var match = Regex.Match(lines[2], @\"\\d\");\r\n\r\n            // Check if a number is found\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "d8d614e3351fa6403793933b538c8c5a942eb760a4f4a815f602c050b7f7bad1"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SuggestVarOrType_BuiltInTypes",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'var' (built-in types)",
+              "markdown": "Use 'var' (built-in types)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 23.0,
+                    "startColumn": 13.0,
+                    "charOffset": 652.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "string"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 21.0,
+                    "startColumn": 1.0,
+                    "charOffset": 562.0,
+                    "charLength": 193.0,
+                    "snippet": {
+                      "text": "\r\n            // Get the full path of the assembly (including the file name)\r\n            string assemblyPath = assembly.Location;\r\n\r\n            // Get the file name (including the extension)\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "30d01878d0ca817a611d905c46ef496b70ba31c5b2b1dce03ecedf53609d4aa6"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SuggestVarOrType_BuiltInTypes",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'var' (built-in types)",
+              "markdown": "Use 'var' (built-in types)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 26.0,
+                    "startColumn": 13.0,
+                    "charOffset": 768.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "string"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 24.0,
+                    "startColumn": 1.0,
+                    "charOffset": 694.0,
+                    "charLength": 172.0,
+                    "snippet": {
+                      "text": "\r\n            // Get the file name (including the extension)\r\n            string assemblyFileName = Path.GetFileName(assemblyPath);\r\n\r\n            return assemblyFileName;\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "3da35264287bb6407ebdb142529d612698da1e3f08aec6bdfff863a9e63e1b7a"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SuggestVarOrType_BuiltInTypes",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'var' (built-in types)",
+              "markdown": "Use 'var' (built-in types)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 84.0,
+                    "startColumn": 17.0,
+                    "charOffset": 2612.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "string"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 82.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2522.0,
+                    "charLength": 237.0,
+                    "snippet": {
+                      "text": "            {\r\n                // Remove the part up to the first number\r\n                string AssemblyInformationalVersion = lines[2].Substring(match.Index).Trim();\r\n                return AssemblyInformationalVersion;\r\n            }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "4a414a3abf057e778427f0c7540c72e37f04a64b23de2e1e862575d7b3ebcae9"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "SuggestVarOrType_SimpleTypes",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Use 'var' (simple types)",
+              "markdown": "Use 'var' (simple types)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 20.0,
+                    "startColumn": 13.0,
+                    "charOffset": 512.0,
+                    "charLength": 8.0,
+                    "snippet": {
+                      "text": "Assembly"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 18.0,
+                    "startColumn": 1.0,
+                    "charOffset": 414.0,
+                    "charLength": 225.0,
+                    "snippet": {
+                      "text": "\r\n            // Get the entry assembly (the assembly that contains the Main method)\r\n            Assembly assembly = Assembly.GetEntryAssembly();\r\n\r\n            // Get the full path of the assembly (including the file name)\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "95db0b0e8b150f272abd0348d39dff449a06f08b9c2031004ea97a9b15bc150d"
+            },
+            "properties": {
+              "ideaSeverity": "TYPO",
+              "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "UnusedMember.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Method 'GetProjectName' is never used",
+              "markdown": "Method 'GetProjectName' is never used"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 16.0,
+                    "startColumn": 30.0,
+                    "charOffset": 385.0,
+                    "charLength": 14.0,
+                    "snippet": {
+                      "text": "GetProjectName"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 14.0,
+                    "startColumn": 1.0,
+                    "charOffset": 299.0,
+                    "charLength": 116.0,
+                    "snippet": {
+                      "text": "        /// </summary>\r\n        /// <returns></returns>\r\n        public static string GetProjectName()\r\n        {\r\n\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "4c9a0d7b3e2c2cdc73666f4189ce800f1be6bb401821cd102fdc07cc5ecae10b"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "UnusedMember.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'utilsProjectDir' is never used",
+              "markdown": "Property 'utilsProjectDir' is never used"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 64.0,
+                    "startColumn": 19.0,
+                    "charOffset": 1762.0,
+                    "charLength": 15.0,
+                    "snippet": {
+                      "text": "utilsProjectDir"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 62.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1690.0,
+                    "charLength": 163.0,
+                    "snippet": {
+                      "text": "    /// Utils project directory.\r\n    /// </summary>\r\n    public string utilsProjectDir { get; set;  }\r\n\r\n    public string utilsProjectName { get; private set; }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "5e69a9419baa85b0adf8fd8756beda1bc2d678ceacf1ccf370e8ec4305c869be"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "UnusedMethodReturnValue.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Method 'ExtractVersion' return value is never used",
+              "markdown": "Method 'ExtractVersion' return value is never used"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 64.0,
+                    "startColumn": 23.0,
+                    "charOffset": 1913.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "string"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 62.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1809.0,
+                    "charLength": 195.0,
+                    "snippet": {
+                      "text": "        /// <param name=\"stdErrBuffer\"></param>\r\n        /// <returns></returns>\r\n        public static string ExtractVersion(StringBuilder stdOutBuffer, StringBuilder stdErrBuffer)\r\n        {\r\n\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "Kinderworx.Utilities.BuildUtilities",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "f3ecdd7042b15d75c9f91e4e82c6af6574a38f27a105c616274c86e57f22c4f8"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          }
+        ],
+        "configProfile": "absent",
+        "deviceId": "200820300000000-ebdc-e11f-d909-f24c8a43257c",
+        "qodanaNewResultSummary": {
+          "high": 5.0,
+          "total": 5.0
+        }
+      }
+    }
+  ]
+}

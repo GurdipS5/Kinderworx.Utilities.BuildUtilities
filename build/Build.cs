@@ -156,6 +156,15 @@ class Build : NukeBuild
     /// </summary>
     readonly AbsolutePath Artifacts = RootDirectory / "Nuke" / "Artifacts";
 
+    /// <summary>
+    ///  Output of coverlet code  coverage report.
+    /// </summary>
+    readonly AbsolutePath QodanaOut = RootDirectory / "Nuke" / "Qodana" / "Results";
+
+    /// <summary>
+    ///  Output of coverlet code  coverage report.
+    /// </summary>
+    readonly AbsolutePath QodanaReport = RootDirectory / "Nuke" / "Qodana" / "Report";
 
     /// <summary>
     ///  Output of coverlet code  coverage report.
@@ -399,6 +408,8 @@ class Build : NukeBuild
             Directory.CreateDirectory(TargetPath.ToString());
             Directory.CreateDirectory(Sbom.ToString());
             Directory.CreateDirectory(Artifacts.ToString());
+            Directory.CreateDirectory(QodanaOut.ToString());
+            Directory.CreateDirectory(QodanaOut.ToString());
         });
 
     /// <summary>
@@ -496,7 +507,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            Qodana("scan --ide QDNET");
+            Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport}");
         });
 
     /// <summary>

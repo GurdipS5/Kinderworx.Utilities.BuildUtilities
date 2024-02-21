@@ -1,0 +1,21 @@
+{
+  "modules": [
+    {
+      "name": "rider.module",
+      "contentEntries": [
+        {
+          "path": "file://$PROJECT_DIR$/.run",
+          "excludePatterns": [],
+          "excludeFolders": [],
+          "sourceFolders": []
+        }
+      ],
+      "orderEntries": [
+        {
+          "name": "<Module source>",
+          "type": "Own sources"
+        }
+      ]
+    }
+  ]
+}

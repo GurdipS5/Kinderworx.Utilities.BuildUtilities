@@ -1,0 +1,11 @@
+{
+  "cloud" : {
+    "url" : "https://qodana.cloud/projects/zqeaX/reports/ROv21",
+    "reportId" : "ROv21",
+    "projectId" : "zqeaX",
+    "projectName" : "Kinderworx.API.Trips"
+  },
+  "vcs" : {
+    "origin" : "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git"
+  }
+}
