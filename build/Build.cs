@@ -513,7 +513,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport} --cacheDir {QodanaCache}");
+            Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport} --cache-dir {QodanaCache}");
         });
 
     /// <summary>
