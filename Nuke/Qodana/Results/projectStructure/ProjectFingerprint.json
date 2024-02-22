@@ -2,12 +2,12 @@
   "languages": [
     "SolutionFile",
     "MSBuild",
-    "textmate",
     "JSON",
-    "YAML",
     "Properties",
-    ".gitignore (GitIgnore)",
     "Plain text",
+    "textmate",
+    "YAML",
+    ".gitignore (GitIgnore)",
     "Shell Script",
     "C#",
     "EditorConfig"

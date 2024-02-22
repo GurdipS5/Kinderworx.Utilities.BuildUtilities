@@ -334,16 +334,16 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
     Referenced projects:
     Referenced assemblies:
       Microsoft.CSharp, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.CSharp.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.TestPlatform.CrossPlatEngine, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.TestPlatform.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.TestPlatform.CrossPlatEngine, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.TestPlatform.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.VisualBasic.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.VisualBasic.Core, Version=13.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.VisualBasic.Core.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.VisualStudio.CodeCoverage.Shim, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.codecoverage\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.VisualStudio.TestPlatform.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.VisualStudio.TestPlatform.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.Win32.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.Win32.Primitives.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.Win32.Registry, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.Win32.Registry.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\mscorlib.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
@@ -505,7 +505,7 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
       System.Xml.XmlSerializer, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Xml.XmlSerializer.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       System.Xml.XPath, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Xml.XPath.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       System.Xml.XPath.XDocument, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Xml.XPath.XDocument.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
-      testhost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\testhost.dll, D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\testhost.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      testhost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\testhost.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\WindowsBase.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c (D:\Nuget\xunit.abstractions\2.0.3\lib\netstandard2.0\xunit.abstractions.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       xunit.assert, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c (D:\Nuget\xunit.assert\2.4.2\lib\netstandard1.1\xunit.assert.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
@@ -620,12 +620,12 @@ Project [Name:_build, GUID:8e4968a7-8282-4252-8672-be9fda4b19ef]
         ProjectFileImpl(Path : version.json (..\..\version.json))[NONE ]
     Folder [Name:logs, AllowsNonExistence:true]
       Child items:
-        ProjectFileImpl(Path : build.2024-02-20_01-29-17.log (..\..\.nuke\temp\build.2024-02-20_01-29-17.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-20_01-44-59.log (..\..\.nuke\temp\build.2024-02-20_01-44-59.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-20_01-57-31.log (..\..\.nuke\temp\build.2024-02-20_01-57-31.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-20_02-39-09.log (..\..\.nuke\temp\build.2024-02-20_02-39-09.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-21_01-45-40.log (..\..\.nuke\temp\build.2024-02-21_01-45-40.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-21_01-49-01.log (..\..\.nuke\temp\build.2024-02-21_01-49-01.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-21_18-04-54.log (..\..\.nuke\temp\build.2024-02-21_18-04-54.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_01-08-25.log (..\..\.nuke\temp\build.2024-02-22_01-08-25.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_01-11-37.log (..\..\.nuke\temp\build.2024-02-22_01-11-37.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_01-16-08.log (..\..\.nuke\temp\build.2024-02-22_01-16-08.log))[NONE ]
         ProjectFileImpl(Path : build.log (..\..\.nuke\temp\build.log))[NONE ]
     Folder [Name:obj, IsHidden:true]
       Child items:
@@ -1157,8 +1157,7 @@ Assembly: 'Microsoft.NET.StringTools, Version=1', PlatformId: 'net8.0', Files Co
   Reference target AssemblyName: System.Collections, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.TestPlatform.CommunicationUtilities, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll
+Assembly: 'Microsoft.TestPlatform.CommunicationUtilities, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1167,8 +1166,7 @@ Assembly: 'Microsoft.TestPlatform.CommunicationUtilities, Version=15', PlatformI
   Reference target AssemblyName: netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
   Reference target AssemblyName: Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.TestPlatform.CoreUtilities, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
+Assembly: 'Microsoft.TestPlatform.CoreUtilities, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CoreUtilities.dll
   Reference target AssemblyName: Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.Win32.Registry, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1189,8 +1187,7 @@ Assembly: 'Microsoft.TestPlatform.CoreUtilities, Version=15', PlatformId: '.NETC
   Reference target AssemblyName: System.Text.RegularExpressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Threading, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.TestPlatform.CrossPlatEngine, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
+Assembly: 'Microsoft.TestPlatform.CrossPlatEngine, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1201,8 +1198,7 @@ Assembly: 'Microsoft.TestPlatform.CrossPlatEngine, Version=15', PlatformId: '.NE
   Reference target AssemblyName: netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.TestPlatform.PlatformAbstractions, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
+Assembly: 'Microsoft.TestPlatform.PlatformAbstractions, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
   Reference target AssemblyName: System.Collections, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Collections.Specialized, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1221,8 +1217,7 @@ Assembly: 'Microsoft.TestPlatform.PlatformAbstractions, Version=15', PlatformId:
   Reference target AssemblyName: System.Threading.Tasks, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Threading.Thread, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.TestPlatform.Utilities, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
+Assembly: 'Microsoft.TestPlatform.Utilities, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1247,8 +1242,7 @@ Assembly: 'Microsoft.VisualStudio.Setup.Configuration.Interop, Version=1', Platf
 	D:\Nuget\microsoft.visualstudio.setup.configuration.interop\3.2.2146\lib\netstandard2.1\Microsoft.VisualStudio.Setup.Configuration.Interop.dll
   Reference target AssemblyName: netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.VisualStudio.TestPlatform.Common, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
+Assembly: 'Microsoft.VisualStudio.TestPlatform.Common, Version=15', PlatformId: '.NETStandard,Version=v2.0', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1258,8 +1252,7 @@ Assembly: 'Microsoft.VisualStudio.TestPlatform.Common, Version=15', PlatformId: 
   Reference target AssemblyName: System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+Assembly: 'Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.PlatformAbstractions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1295,11 +1288,6 @@ Assembly: 'Microsoft.Win32.Registry, Version=8', PlatformId: 'net8.0', Files Cou
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.AccessControl, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Principal.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
-Assembly: 'Microsoft.Win32.SystemEvents, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\Microsoft.Win32.SystemEvents.dll
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
 Assembly: 'Microsoft.Win32.SystemEvents, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\microsoft.win32.systemevents\7.0.0\lib\net7.0\Microsoft.Win32.SystemEvents.dll
@@ -1721,14 +1709,6 @@ Assembly: 'System.Buffers, Version=8', PlatformId: 'net8.0', Files Count:1
 	C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Buffers.dll
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'System.CodeDom, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.CodeDom.dll
-  Reference target AssemblyName: System.Collections.NonGeneric, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Collections.Specialized, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.TypeConverter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
 Assembly: 'System.CodeDom, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll
   Reference target AssemblyName: System.Collections, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1807,18 +1787,6 @@ Assembly: 'System.Configuration, Version=4', PlatformId: 'net8.0', Files Count:1
   Reference target AssemblyName: System.Configuration.ConfigurationManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Permissions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
-
-Assembly: 'System.Configuration.ConfigurationManager, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Configuration.ConfigurationManager.dll
-  Reference target AssemblyName: System.Collections.NonGeneric, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Collections.Specialized, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.TypeConverter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ObjectModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Xml.ReaderWriter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
 Assembly: 'System.Configuration.ConfigurationManager, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.configuration.configurationmanager\7.0.0\lib\net7.0\System.Configuration.ConfigurationManager.dll
@@ -1904,15 +1872,6 @@ Assembly: 'System.Diagnostics.DiagnosticSource, Version=8', PlatformId: 'net8.0'
 	C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Diagnostics.DiagnosticSource.dll
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'System.Diagnostics.EventLog, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\8.0.0\ref\net8.0\System.Diagnostics.EventLog.dll
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.TypeConverter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Diagnostics.TraceSource, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime.InteropServices, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Principal.Windows, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
 Assembly: 'System.Diagnostics.EventLog, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.diagnostics.eventlog\7.0.0\lib\net7.0\System.Diagnostics.EventLog.dll
   Reference target AssemblyName: System.ComponentModel.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -1966,18 +1925,6 @@ Assembly: 'System.Drawing, Version=4', PlatformId: 'net8.0', Files Count:1
   Reference target AssemblyName: System.Drawing.Primitives, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Permissions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
-
-Assembly: 'System.Drawing.Common, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Drawing.Common.dll
-  Reference target AssemblyName: System.Collections.NonGeneric, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.TypeConverter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Drawing.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Numerics.Vectors, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ObjectModel, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime.InteropServices, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
 Assembly: 'System.Drawing.Common, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.drawing.common\7.0.0\lib\net7.0\System.Drawing.Common.dll
@@ -2345,11 +2292,6 @@ Assembly: 'System.Reflection.TypeExtensions, Version=8', PlatformId: 'net8.0', F
 	C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Reflection.TypeExtensions.dll
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'System.Resources.Extensions, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Resources.Extensions.dll
-  Reference target AssemblyName: System.Resources.Writer, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
 Assembly: 'System.Resources.Extensions, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.resources.extensions\7.0.0\lib\net7.0\System.Resources.Extensions.dll
   Reference target AssemblyName: System.Collections, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -2502,11 +2444,6 @@ Assembly: 'System.Security.Cryptography.OpenSsl, Version=8', PlatformId: 'net8.0
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'System.Security.Cryptography.Pkcs, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Security.Cryptography.Pkcs.dll
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
 Assembly: 'System.Security.Cryptography.Pkcs, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.security.cryptography.pkcs\7.0.2\lib\net7.0\System.Security.Cryptography.Pkcs.dll
   Reference target AssemblyName: System.Collections, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -2525,10 +2462,6 @@ Assembly: 'System.Security.Cryptography.Primitives, Version=8', PlatformId: 'net
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'System.Security.Cryptography.ProtectedData, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Security.Cryptography.ProtectedData.dll
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
 Assembly: 'System.Security.Cryptography.ProtectedData, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.security.cryptography.protecteddata\7.0.0\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
   Reference target AssemblyName: System.Runtime, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
@@ -2538,13 +2471,6 @@ Assembly: 'System.Security.Cryptography.X509Certificates, Version=8', PlatformId
 	C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Security.Cryptography.X509Certificates.dll
   Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
-Assembly: 'System.Security.Cryptography.Xml, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\8.0.0\ref\net8.0\System.Security.Cryptography.Xml.dll
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.AccessControl, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Xml.ReaderWriter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
 Assembly: 'System.Security.Cryptography.Xml, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.security.cryptography.xml\7.0.1\lib\net7.0\System.Security.Cryptography.Xml.dll
@@ -2562,18 +2488,6 @@ Assembly: 'System.Security.Cryptography.Xml, Version=7', PlatformId: 'net7.0', F
   Reference target AssemblyName: System.Text.Encoding.Extensions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Xml.ReaderWriter, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Xml.XPath, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
-Assembly: 'System.Security.Permissions, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Security.Permissions.dll
-  Reference target AssemblyName: System.Collections.NonGeneric, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Data.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.AccessControl, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Text.RegularExpressions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Threading, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Windows.Extensions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
 
 Assembly: 'System.Security.Permissions, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.security.permissions\7.0.0\lib\net7.0\System.Security.Permissions.dll
@@ -2717,15 +2631,6 @@ Assembly: 'System.Windows, Version=4', PlatformId: 'net8.0', Files Count:1
 	C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Windows.dll
   Reference target AssemblyName: System.ObjectModel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-
-Assembly: 'System.Windows.Extensions, Version=8', PlatformId: 'net8.0', Files Count:1
-	C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.0\ref\net8.0\System.Windows.Extensions.dll
-  Reference target AssemblyName: System.ComponentModel.EventBasedAsync, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.Primitives, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.ComponentModel.TypeConverter, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Runtime, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
-  Reference target AssemblyName: System.Security.Cryptography, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
 Assembly: 'System.Windows.Extensions, Version=7', PlatformId: 'net7.0', Files Count:1
 	D:\Nuget\system.windows.extensions\7.0.0\lib\net7.0\System.Windows.Extensions.dll
@@ -2932,8 +2837,7 @@ Assembly: 'netstandard, Version=2', PlatformId: 'net8.0', Files Count:1
   Reference target AssemblyName: System.Xml.XPath, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: System.Xml.XPath.XDocument, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
 
-Assembly: 'testhost, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:2
-	C:\Users\Gurdip\.nuget\packages\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\testhost.dll
+Assembly: 'testhost, Version=15', PlatformId: '.NETCoreApp,Version=v3.1', Files Count:1
 	D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\testhost.dll
   Reference target AssemblyName: Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
   Reference target AssemblyName: Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, HintLocation:  in Universal contexts
