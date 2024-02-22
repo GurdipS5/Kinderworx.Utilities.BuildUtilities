@@ -640,6 +640,7 @@ class Build : NukeBuild
     /// </summary>
     Target Clean => _ => _
         .DependsOn(StartSonarscan)
+         .AssuredAfterFailure()
         .Executes(() =>
         {
             RootDirectory
@@ -649,17 +650,18 @@ class Build : NukeBuild
 
     Target Restore => _ => _
         .DependsOn(Clean)
-
+         .AssuredAfterFailure()
         .Executes(() =>
         {
-            DotNet($"restore {utilsProjectName}");
+            DotNet($"restore {utilsProjectPath}");
         });
 
     Target Compile => _ => _
         .DependsOn(Restore)
+       .AssuredAfterFailure()
         .Executes(() =>
         {
-                DotNet($"publish {utilsProjectName} -f {Framework} --self-contained {SelfContained} --output {PublishFolder}");
+                DotNet($"build {utilsProjectPath} -f {Framework} --self-contained {SelfContained} --output {PublishFolder}");
         });
 
 
