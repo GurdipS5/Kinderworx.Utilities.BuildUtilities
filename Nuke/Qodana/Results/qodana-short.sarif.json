@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-22T17:44:41.7773963Z",
+          "startTimeUtc": "2024-02-22T17:51:33.5776549Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-22T17:44:47.5781796Z",
+              "timeUtc": "2024-02-22T17:51:37.4824807Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "abc3a52cc24eb4828fbfc4a628c53499dd1430d8",
+          "revisionId": "28a375cbd2d643ea2f820b76b9f70f9f5fe8f1d0",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-22",
-        "guid": "1e83223f-a39e-4a91-b147-aea184e65c46",
+        "guid": "eb7541d6-d3da-4099-bcf2-0653e8303ff7",
         "properties": {
           "jobUrl": ""
         }
@@ -241,6 +241,58 @@
             "properties": {
               "ideaSeverity": "TYPO",
               "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "CheckTagEmptyBody",
+            "kind": "fail",
+            "level": "warning",
+            "message": {
+              "text": "XML tag has empty body",
+              "markdown": "XML tag has empty body"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/_build.csproj",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 6.0,
+                    "startColumn": 5.0,
+                    "charOffset": 141.0,
+                    "charLength": 31.0,
+                    "snippet": {
+                      "text": "<RootNamespace></RootNamespace>"
+                    },
+                    "sourceLanguage": "MSBuild"
+                  },
+                  "contextRegion": {
+                    "startLine": 4.0,
+                    "startColumn": 1.0,
+                    "charOffset": 56.0,
+                    "charLength": 229.0,
+                    "snippet": {
+                      "text": "    <OutputType>Exe</OutputType>\r\n    <TargetFramework>net8.0</TargetFramework>\r\n    <RootNamespace></RootNamespace>\r\n    <NoWarn>CS0649;CS0169;CA1050;CA1822;CA2211;IDE1006</NoWarn>\r\n    <NukeRootDirectory>..</NukeRootDirectory>\r"
+                    },
+                    "sourceLanguage": "MSBuild"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "db2bb56aa88c3f8d48da0e41c8cdba0395d491874c17fdf32e3d2848b584cb10"
+            },
+            "properties": {
+              "ideaSeverity": "WARNING",
+              "qodanaSeverity": "High"
             }
           },
           {
