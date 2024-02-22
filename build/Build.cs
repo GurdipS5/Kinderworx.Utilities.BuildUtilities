@@ -231,7 +231,7 @@ class Build : NukeBuild
     /// <summary>
     /// Directory of MSTests project.
     /// </summary>
-    AbsolutePath TestsDirectory => RootDirectory.GlobDirectories("*.Tests").Single();
+    AbsolutePath TestsDirectory => RootDirectory / "Tests";
 
     /// <summary>
     /// Target path.
@@ -407,6 +407,7 @@ class Build : NukeBuild
             Directory.CreateDirectory(PublishFolder.ToString());
             Directory.CreateDirectory(NDependOutput.ToString());
             Directory.CreateDirectory(BuildDir.ToString());
+            Directory.CreateDirectory(PublishFolder.ToString());
             Directory.CreateDirectory(PvsStudio.ToString());
             Directory.CreateDirectory(CoverletOutput.ToString());
             Directory.CreateDirectory(ReportOut.ToString());
@@ -600,6 +601,7 @@ class Build : NukeBuild
     /// </summary>
     Target RunPvsStudio => _ => _
         .DependsOn(PushToDTrack)
+         .AssuredAfterFailure()
         .Executes(() =>
         {
             var pvsfile = string.Empty;
