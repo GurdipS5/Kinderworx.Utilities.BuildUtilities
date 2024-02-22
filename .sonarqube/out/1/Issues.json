@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-7.24067.24 (26357112)",
+        "semanticVersion": "4.8.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Repositories/Utilities/Kinderworx.Utilities.BuildUtilities/Tests/UnitTest1.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 39,
+                  "endLine": 10,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "xUnit2009",
+          "level": "warning",
+          "message": "Do not use Assert.True() to check for substrings. Use Assert.Contains instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Repositories/Utilities/Kinderworx.Utilities.BuildUtilities/Tests/UnitTest1.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 13,
+                  "endLine": 10,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "AssertMethodName": "True",
+              "Replacement": "Contains",
+              "SubstringMethodName": "Contains"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1847": {
+          "id": "CA1847",
+          "shortDescription": "Use char literal for a single character lookup",
+          "fullDescription": "'string.Contains(char)' is available as a better performing overload for single char lookup.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1847",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "xUnit2009": {
+          "id": "xUnit2009",
+          "shortDescription": "Do not use boolean check to check for substrings",
+          "defaultLevel": "warning",
+          "helpUri": "https://xunit.net/xunit.analyzers/rules/xUnit2009",
+          "properties": {
+            "category": "Assertions",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

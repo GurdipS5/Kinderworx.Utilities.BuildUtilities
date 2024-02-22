@@ -252,7 +252,7 @@ Project [Name:Kinderworx.Utilities.BuildUtilities, GUID:1b6bb5db-af03-4e10-b74a-
       System.Text.Json.SourceGeneration, Roslyn Analyzer
       System.Text.RegularExpressions.Generator, Roslyn Analyzer
 
-Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31-b80c-97d9c1af7965]
+Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:3d2b670f-3cdd-40fa-9142-81ff5b3d61b8]
   CSharp Properties:
     Active configuration for 'net8.0':
         AllowUnsafeCode:False
@@ -284,7 +284,7 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
       Name:Debug
       RelativeOutputDirectory:bin\Debug\net8.0\
       RelativeIntermediateDirectory:obj\Debug\net8.0\
-      Properties:AndroidUseManagedDesignTimeResourceGenerator=True, AssemblyName=Kinderworx.Utilities.BuildUtilities.Tests, BaseIntermediateOutputPath=obj\, CSharpCoreTargetsPath=C:\Program Files\dotnet\sdk\8.0.102\Roslyn\Microsoft.CSharp.Core.targets, EditorConfigFiles=obj\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.GeneratedMSBuildEditorConfig.editorconfig;C:\Program Files\dotnet\sdk\8.0.102\Sdks\Microsoft.NET.Sdk\analyzers\build\config\analysislevel_8_default.globalconfig, GenerateProgramFile=true, ImplicitUsings=enable, LangVersion=12.0, MSBuildProjectExtensionsPath=D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\Kinderworx.Utilities.BuildUtilities.Tests\obj\, NoWarn=1701;1702;1701;1702, NuGetPackageRoot=D:\Nuget, Nullable=enable, OutputPath=bin\Debug\net8.0\, PackageId=Kinderworx.Utilities.BuildUtilities.Tests, ProduceReferenceAssembly=true, RestoreProjectStyle=PackageReference, RootNamespace=Kinderworx.Utilities.BuildUtilities.Tests, RoslynTargetsPath=C:\Program Files\dotnet\sdk\8.0.102\Roslyn, RunArguments=exec "D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\Kinderworx.Utilities.BuildUtilities.Tests\bin\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.dll", RunCommand=dotnet, TargetExt=.dll, TargetFramework=net8.0, TargetPath=D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\Kinderworx.Utilities.BuildUtilities.Tests\bin\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.dll, WarningsAsErrors=;NU1605;SYSLIB0011
+      Properties:AndroidUseManagedDesignTimeResourceGenerator=True, AssemblyName=Kinderworx.Utilities.BuildUtilities.Tests, BaseIntermediateOutputPath=obj\, CSharpCoreTargetsPath=C:\Program Files\dotnet\sdk\8.0.102\Roslyn\Microsoft.CSharp.Core.targets, EditorConfigFiles=obj\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.GeneratedMSBuildEditorConfig.editorconfig;C:\Program Files\dotnet\sdk\8.0.102\Sdks\Microsoft.NET.Sdk\analyzers\build\config\analysislevel_8_default.globalconfig, GenerateProgramFile=true, ImplicitUsings=enable, LangVersion=12.0, MSBuildProjectExtensionsPath=D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\obj\, NoWarn=1701;1702;1701;1702, NuGetPackageRoot=D:\Nuget, Nullable=enable, OutputPath=bin\Debug\net8.0\, PackageId=Kinderworx.Utilities.BuildUtilities.Tests, ProduceReferenceAssembly=true, RestoreProjectStyle=PackageReference, RootNamespace=Kinderworx.Utilities.BuildUtilities.Tests, RoslynTargetsPath=C:\Program Files\dotnet\sdk\8.0.102\Roslyn, RunArguments=exec "D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\bin\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.dll", RunCommand=dotnet, TargetExt=.dll, TargetFramework=net8.0, TargetPath=D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\bin\Debug\net8.0\Kinderworx.Utilities.BuildUtilities.Tests.dll, WarningsAsErrors=;NU1605;SYSLIB0011
       Capabilities:CrossPlatformExecutable
     Build Settings:
         PreBuildEvent:
@@ -306,13 +306,16 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
       DotNetCoreSDK:Microsoft.NETCore.App 3.1.0
       DotNetCoreSDK:Microsoft.NETCore.App 3.0.0
   Child items:
+    Folder [Name:']
+      Child items:
+        ProjectFileImpl(Path : '.opencover.xml)[NONE ]
     ProjectFileImpl(Path : GlobalUsings.cs)[COMPILE ]
     ProjectFileImpl(Path : Kinderworx.Utilities.BuildUtilities.Tests.csproj)[]
     ProjectFileImpl(Path : UnitTest1.cs)[COMPILE ]
     Folder [Name:config, Virtual:C:\Program Files\dotnet\sdk\8.0.102\Sdks\Microsoft.NET.Sdk\analyzers\build\config, IsHidden:true]
       Child items:
         ProjectFileImpl(Path : analysislevel_8_default.globalconfig)[Hidden EDITORCONFIGFILES ]
-    Folder [Name:netcoreapp3.1, Virtual:..\..\..\..\..\Nuget\microsoft.net.test.sdk\17.6.0\build\netcoreapp3.1, IsHidden:true]
+    Folder [Name:netcoreapp3.1, Virtual:..\..\..\..\Nuget\microsoft.net.test.sdk\17.6.0\build\netcoreapp3.1, IsHidden:true]
       Child items:
         ProjectFileImpl(Path : Microsoft.NET.Test.Sdk.Program.cs)[Hidden COMPILE ]
     Folder [Name:obj, IsHidden:true]
@@ -325,13 +328,15 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
                 ProjectFileImpl(Path : Kinderworx.Utilities.BuildUtilities.Tests.GeneratedMSBuildEditorConfig.editorconfig)[Hidden EDITORCONFIGFILES ]
                 ProjectFileImpl(Path : Kinderworx.Utilities.BuildUtilities.Tests.GlobalUsings.g.cs)[Hidden COMPILE ]
                 ProjectFileImpl(Path : Kinderworx.Utilities.BuildUtilities.Tests.Version.cs)[Hidden COMPILE ]
-    ProjectFileImpl(Path : testhost.dll (..\..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.dll))[Hidden CONTENT ]
-    ProjectFileImpl(Path : testhost.exe (..\..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.exe))[Hidden CONTENT ]
-    ProjectFileImpl(Path : xunit.runner.reporters.netcoreapp10.dll (..\..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll))[Hidden NONE ]
-    ProjectFileImpl(Path : xunit.runner.utility.netcoreapp10.dll (..\..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll))[Hidden NONE ]
-    ProjectFileImpl(Path : xunit.runner.visualstudio.dotnetcore.testadapter.dll (..\..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll))[Hidden NONE ]
+    ProjectFileImpl(Path : results.opencover.xml)[NONE ]
+    ProjectFileImpl(Path : testhost.dll (..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.dll))[Hidden CONTENT ]
+    ProjectFileImpl(Path : testhost.exe (..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.exe))[Hidden CONTENT ]
+    ProjectFileImpl(Path : xunit.runner.reporters.netcoreapp10.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll))[Hidden NONE ]
+    ProjectFileImpl(Path : xunit.runner.utility.netcoreapp10.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll))[Hidden NONE ]
+    ProjectFileImpl(Path : xunit.runner.visualstudio.dotnetcore.testadapter.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll))[Hidden NONE ]
   Target framework: net8.0
     Referenced projects:
+      Kinderworx.Utilities.BuildUtilities (Kinderworx.Utilities.BuildUtilities) [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=False, IsOutputAssembly=False, ReferenceOutputAssembly=True]
     Referenced assemblies:
       Microsoft.CSharp, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\Microsoft.CSharp.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (D:\Nuget\microsoft.testplatform.testhost\17.6.0\lib\netcoreapp3.1\Microsoft.TestPlatform.CommunicationUtilities.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
@@ -350,6 +355,11 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:ba9fcd93-31c7-4e31
       netstandard, Version=2.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\netstandard.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed (D:\Nuget\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       NuGet.Frameworks, Version=5.11.0.10, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (D:\Nuget\nuget.frameworks\5.11.0\lib\netstandard2.0\NuGet.Frameworks.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10 (D:\Nuget\serilog\3.1.1\lib\net7.0\Serilog.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Serilog.Formatting.Compact, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10 (D:\Nuget\serilog.formatting.compact\2.0.0\lib\net7.0\Serilog.Formatting.Compact.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Serilog.Sinks.File, Version=5.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10 (D:\Nuget\serilog.sinks.file\5.0.0\lib\net5.0\Serilog.Sinks.File.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Serilog.Sinks.PeriodicBatching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10 (D:\Nuget\serilog.sinks.periodicbatching\4.0.0-dev-00821\lib\net6.0\Serilog.Sinks.PeriodicBatching.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
+      Serilog.Sinks.Seq, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10 (D:\Nuget\serilog.sinks.seq\7.0.0-dev-00276\lib\net6.0\Serilog.Sinks.Seq.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       System.AppContext, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.AppContext.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
       System.Buffers, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.2\ref\net8.0\System.Buffers.dll), Resolved [CopyLocal=True, AutoReferenced=False, AliasList=, EmbedInteropTypes=False, IsHidden=True, IsOutputAssembly=False, ReferenceOutputAssembly=True]
@@ -620,12 +630,12 @@ Project [Name:_build, GUID:8e4968a7-8282-4252-8672-be9fda4b19ef]
         ProjectFileImpl(Path : version.json (..\..\version.json))[NONE ]
     Folder [Name:logs, AllowsNonExistence:true]
       Child items:
-        ProjectFileImpl(Path : build.2024-02-21_01-45-40.log (..\..\.nuke\temp\build.2024-02-21_01-45-40.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-21_01-49-01.log (..\..\.nuke\temp\build.2024-02-21_01-49-01.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-21_18-04-54.log (..\..\.nuke\temp\build.2024-02-21_18-04-54.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-22_01-08-25.log (..\..\.nuke\temp\build.2024-02-22_01-08-25.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-22_01-11-37.log (..\..\.nuke\temp\build.2024-02-22_01-11-37.log))[NONE ]
-        ProjectFileImpl(Path : build.2024-02-22_01-16-08.log (..\..\.nuke\temp\build.2024-02-22_01-16-08.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_02-06-30.log (..\..\.nuke\temp\build.2024-02-22_02-06-30.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_02-09-32.log (..\..\.nuke\temp\build.2024-02-22_02-09-32.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_02-13-44.log (..\..\.nuke\temp\build.2024-02-22_02-13-44.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_17-13-19.log (..\..\.nuke\temp\build.2024-02-22_17-13-19.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_17-25-30.log (..\..\.nuke\temp\build.2024-02-22_17-25-30.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-22_17-40-15.log (..\..\.nuke\temp\build.2024-02-22_17-40-15.log))[NONE ]
         ProjectFileImpl(Path : build.log (..\..\.nuke\temp\build.log))[NONE ]
     Folder [Name:obj, IsHidden:true]
       Child items:

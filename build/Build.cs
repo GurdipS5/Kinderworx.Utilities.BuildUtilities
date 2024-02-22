@@ -74,7 +74,7 @@ class Build : NukeBuild
     /// <summary>
     ///
     /// </summary>
-    public string CodeCoverage { get; private set; }
+    public string CodeCoverage = "true";
 
 
 
@@ -400,7 +400,6 @@ class Build : NukeBuild
     /// Set and create build paths.
     /// </summary>
     Target SetPathsTarget => _ => _
-        .Before(SetVariablesTarget)
         .Executes(() =>
         {
             Directory.CreateDirectory(NupkgPath.ToString());
@@ -415,7 +414,7 @@ class Build : NukeBuild
             Directory.CreateDirectory(Sbom.ToString());
             Directory.CreateDirectory(Artifacts.ToString());
             Directory.CreateDirectory(QodanaOut.ToString());
-            Directory.CreateDirectory(QodanaOut.ToString());
+            Directory.CreateDirectory(QodanaReport.ToString());
         });
 
     /// <summary>
@@ -423,6 +422,7 @@ class Build : NukeBuild
     /// </summary>
     Target SetVariablesTarget => _ => _
         .After(SetPathsTarget)
+        .DependsOn(SetPathsTarget)
         .Executes(() =>
         {
 
@@ -671,8 +671,10 @@ class Build : NukeBuild
         {
             var testProj = TestsDirectory.GlobFiles("*.Tests.csproj").FirstOrDefault();
 
+            Log.Information(testProj.Name);
+
             // Execute dotnet test to run the unit tests.
-            DotNet($@"test {testProj.ToString()} /p:CollectCoverage={CodeCoverage} /p:CoverletOutputFormat=opencover");
+            DotNet($@"test {testProj.ToString()} /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput='./' ");
 
             // Coverage xml file.
             var sourceFile = Path.Combine(TestsDirectory.ToString(), "coverage.opencover.xml");

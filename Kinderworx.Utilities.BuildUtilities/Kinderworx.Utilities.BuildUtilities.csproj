@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.msbuild" Version="6.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Serilog.Sinks.Seq" Version="7.0.0-dev-00276" />
     <PackageReference Include="System.IO.Compression" Version="4.3.0" />
   </ItemGroup>

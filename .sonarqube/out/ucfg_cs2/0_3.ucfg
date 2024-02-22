@@ -1,0 +1,50 @@
+
+?Kinderworx.Utilities.BuildUtilities.BuildUtils.GetProjectName()y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs (+"0*ì
+0y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs %(#Ô
+Ï
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs  (; 
+%0System.Reflection.Assembly"-System.Reflection.Assembly.GetEntryAssembly()*"
+System.Reflection.Assembly–
+Õ
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs (;&
+assemblySystem.Reflection.Assembly"__id*"
+ 
+%0System.Reflection.AssemblyÌÍ
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs "  (3
+%1string"'System.Reflection.Assembly.Location.get*(
+&
+assemblySystem.Reflection.Assembly2Location.get¨
+©
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs   (3
+assemblyPathstring"__id*
+
+%1stringﬂ
+‹
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs#& #(D
+%2string"#System.IO.Path.GetFileName(string?)*"
+System.IO.Path*
+
+assemblyPathstring∞
+≠
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs# #(D
+assemblyFileNamestring"__id*
+
+%2string"ô
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs% %($
+
+assemblyFileNamestring*ë
+1y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs&	 &(	"ê
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs& &(	
+implicit returnB2"0
+.Kinderworx.Utilities.BuildUtilities.BuildUtils

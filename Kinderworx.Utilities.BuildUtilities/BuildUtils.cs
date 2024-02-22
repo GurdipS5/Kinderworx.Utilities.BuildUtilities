@@ -7,8 +7,17 @@ using System.IO.Compression;
 
 namespace Kinderworx.Utilities.BuildUtilities
 {
+
     public static class BuildUtils
     {
+
+        public static string Test()
+        {
+
+
+            return "s";
+
+        }
         /// <summary>
         /// Nuke build utilities.
         /// </summary>

@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-7.24067.24 (26357112)",
+        "semanticVersion": "4.8.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Repositories/Utilities/Kinderworx.Utilities.BuildUtilities/Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 33,
+                  "endLine": 29,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Repositories/Utilities/Kinderworx.Utilities.BuildUtilities/Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 35,
+                  "endLine": 32,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3400",
+          "level": "warning",
+          "message": "Remove this method and declare a constant for this value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Repositories/Utilities/Kinderworx.Utilities.BuildUtilities/Kinderworx.Utilities.BuildUtilities/BuildUtils.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 30,
+                  "endLine": 14,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8600": {
+          "id": "CS8600",
+          "shortDescription": "Converting null literal or possible null value to non-nullable type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8600)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S3400": {
+          "id": "S3400",
+          "shortDescription": "Methods should not return constants",
+          "fullDescription": "There’s no point in forcing the overhead of a method call for a method that always returns the same constant value. Even worse, the fact that a method call must be made will likely mislead developers who call the method thinking that something more is done. Declare a constant instead.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3400",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\GlobalUsings.cs
+D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\UnitTest1.cs
+D:\Nuget\microsoft.net.test.sdk\17.6.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+D:\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.exe
+D:\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.dll
+D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
+D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
+D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\'.opencover.xml
+D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results.opencover.xml

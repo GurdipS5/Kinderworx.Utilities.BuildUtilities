@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		version.json = version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinderworx.Utilities.BuildUtilities.Tests", "Tests\Kinderworx.Utilities.BuildUtilities.Tests\Kinderworx.Utilities.BuildUtilities.Tests.csproj", "{BA9FCD93-31C7-4E31-B80C-97D9C1AF7965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinderworx.Utilities.BuildUtilities.Tests", "Tests\Kinderworx.Utilities.BuildUtilities.Tests.csproj", "{3D2B670F-3CDD-40FA-9142-81FF5B3D61B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{1B6BB5DB-AF03-4E10-B74A-50CF51BC2D41}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E4968A7-8282-4252-8672-BE9FDA4B19EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E4968A7-8282-4252-8672-BE9FDA4B19EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA9FCD93-31C7-4E31-B80C-97D9C1AF7965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA9FCD93-31C7-4E31-B80C-97D9C1AF7965}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA9FCD93-31C7-4E31-B80C-97D9C1AF7965}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA9FCD93-31C7-4E31-B80C-97D9C1AF7965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D2B670F-3CDD-40FA-9142-81FF5B3D61B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2B670F-3CDD-40FA-9142-81FF5B3D61B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2B670F-3CDD-40FA-9142-81FF5B3D61B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2B670F-3CDD-40FA-9142-81FF5B3D61B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
