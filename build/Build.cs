@@ -743,7 +743,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            SonarscannerTool($"end /d:sonar.login=\"{SonarKey}\"");
+            SonarscannerTool($"end /d:sonar.login=\"{SonarKey}\" /d:sonar.verbose=true");
         });
 
 
