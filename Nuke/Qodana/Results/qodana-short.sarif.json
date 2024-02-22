@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-22T17:54:40.9788711Z",
+          "startTimeUtc": "2024-02-22T17:58:20.1483846Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-22T17:54:46.992265Z",
+              "timeUtc": "2024-02-22T17:58:23.7422408Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "8b73e37b2284cfa4da4d9f966420d7b722e90705",
+          "revisionId": "fc3bf3ac49670cce1108630bfb266bb515cb1cce",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-22",
-        "guid": "ae36ac31-d5fd-42ae-baea-35182ccee0a0",
+        "guid": "7179b1d6-0a61-4f30-a23e-c5b04ce7fe7e",
         "properties": {
           "jobUrl": ""
         }
@@ -293,6 +293,110 @@
             "properties": {
               "ideaSeverity": "WEAK WARNING",
               "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "IgnoreFileDuplicateEntry",
+            "kind": "fail",
+            "level": "warning",
+            "message": {
+              "text": "'*.aps' pattern is defined more than once",
+              "markdown": "`*.aps` pattern is defined more than once"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": ".gitignore",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 308.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5578.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "*.aps"
+                    },
+                    "sourceLanguage": "IgnoreLang"
+                  },
+                  "contextRegion": {
+                    "startLine": 306.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5536.0,
+                    "charLength": 92.0,
+                    "snippet": {
+                      "text": "# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r\n# Visual Studio LightSwitch build output\r"
+                    },
+                    "sourceLanguage": "GitIgnore"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "305d4e113dc870ac95b31012b02d7a7a5655b1eb6097ca560d30eb2ebd9c1553"
+            },
+            "properties": {
+              "ideaSeverity": "WARNING",
+              "qodanaSeverity": "High"
+            }
+          },
+          {
+            "ruleId": "IgnoreFileDuplicateEntry",
+            "kind": "fail",
+            "level": "warning",
+            "message": {
+              "text": "'*.ncb' pattern is defined more than once",
+              "markdown": "`*.ncb` pattern is defined more than once"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": ".gitignore",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 307.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5571.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "*.ncb"
+                    },
+                    "sourceLanguage": "IgnoreLang"
+                  },
+                  "contextRegion": {
+                    "startLine": 305.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5534.0,
+                    "charLength": 52.0,
+                    "snippet": {
+                      "text": "\r\n# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r"
+                    },
+                    "sourceLanguage": "GitIgnore"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "d9e7434435f56f802b1d9581070b99aac14a6a026265f596d7c7babde720768b"
+            },
+            "properties": {
+              "ideaSeverity": "WARNING",
+              "qodanaSeverity": "High"
             }
           },
           {

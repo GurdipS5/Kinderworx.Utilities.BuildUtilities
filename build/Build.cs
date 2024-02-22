@@ -607,7 +607,7 @@ class Build : NukeBuild
             var pvsfile = string.Empty;
             var plogFile = PvsStudio / "pvs-studio.plog";
             pvsfile = plogFile.ToString();
-            File.Create(plogFile);
+
 
             string pvsPath = Path.Combine(Artifacts, "PVSReport.zip");
 
