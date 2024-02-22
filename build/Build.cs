@@ -632,7 +632,7 @@ class Build : NukeBuild
         .Executes(() =>
         {
             SonarscannerTool(
-                @$"begin /k:{BuildUtils.Helper(utilsProjectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey}");
+                @$"begin /k:{BuildUtils.Helper(utilsProjectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey} /d:sonar.verbose=true");
         });
 
     /// <summary>
@@ -743,7 +743,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            SonarscannerTool($"end /d:sonar.login=\"{SonarKey}\" /d:sonar.verbose=true");
+            SonarscannerTool($"end /d:sonar.login=\"{SonarKey}\"");
         });
 
 

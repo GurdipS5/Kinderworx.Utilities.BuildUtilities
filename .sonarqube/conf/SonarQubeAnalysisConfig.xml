@@ -163,6 +163,7 @@
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://10.1.0.11:9000</Property>
+    <Property Name="sonar.verbose">true</Property>
   </LocalSettings>
   <AnalyzersSettings>
     <AnalyzerSettings>

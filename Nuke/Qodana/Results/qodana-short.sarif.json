@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-22T18:16:41.5365856Z",
+          "startTimeUtc": "2024-02-22T18:19:54.6065121Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-22T18:16:47.2286299Z",
+              "timeUtc": "2024-02-22T18:20:00.7022721Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "69559d01533af409d0c838af36d8b03b2e7eff43",
+          "revisionId": "8d499e6b7c752fc36e1860afc38c1b7a01e77d12",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-22",
-        "guid": "6d3ab740-1090-4ef3-82a5-88372e10c5f7",
+        "guid": "7aa53699-458d-4860-b39a-3f56f0b3783b",
         "properties": {
           "jobUrl": ""
         }
@@ -969,6 +969,266 @@
             "properties": {
               "ideaSeverity": "WEAK WARNING",
               "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 77.0,
+                    "startColumn": 159.0,
+                    "charOffset": 7474.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 75.0,
+                    "startColumn": 1.0,
+                    "charOffset": 7168.0,
+                    "charLength": 518.0,
+                    "snippet": {
+                      "text": "                <BranchPoint vc=\"0\" uspid=\"53\" ordinal=\"1\" path=\"1\" offset=\"9\" offsetend=\"23\" sl=\"53\" fileid=\"1\" />\r\n              </BranchPoints>\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"3\" offset=\"3\" sc=\"0\" sl=\"52\" ec=\"1\" el=\"65\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "2cad3ca2c8490e4d026e3f485feca5ece5dfc7dbcbaa00c021c32ac70aada818"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 28.0,
+                    "startColumn": 159.0,
+                    "charOffset": 2452.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 26.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2229.0,
+                    "charLength": 435.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"3\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"0\" offset=\"0\" sc=\"0\" sl=\"15\" ec=\"1\" el=\"20\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "300f5a431a6b65c621c0435f0ca59bf941ddd7d790d0775c72701ca7db7726dc"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 96.0,
+                    "startColumn": 159.0,
+                    "charOffset": 9513.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 94.0,
+                    "startColumn": 1.0,
+                    "charOffset": 9290.0,
+                    "charLength": 276.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"4\" offset=\"4\" sc=\"0\" sl=\"74\" ec=\"1\" el=\"90\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n          </Methods>\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "5f2896cfd8b028427f372669c43b50793f6619e0c69312acaa627dc76a339c24"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 44.0,
+                    "startColumn": 159.0,
+                    "charOffset": 4112.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 42.0,
+                    "startColumn": 1.0,
+                    "charOffset": 3889.0,
+                    "charLength": 435.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"1\" offset=\"1\" sc=\"0\" sl=\"26\" ec=\"1\" el=\"38\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "66d106bab1ffaf132cc9ac3fcff182f42e0053fb2cbeaaae7d8b95b1c28abff4"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 55.0,
+                    "startColumn": 159.0,
+                    "charOffset": 5167.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 53.0,
+                    "startColumn": 1.0,
+                    "charOffset": 4944.0,
+                    "charLength": 432.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"2\" offset=\"2\" sc=\"0\" sl=\"45\" ec=\"1\" el=\"45\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"2\" nPathComplexity=\"2\" sequenceCoverage=\"0\" branchCoverage=\"0\" isConstructor=\"True\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "90ce26f87c35a85f334b18b4cb09fb8e1439331c966d80a5016731d72b9767a1"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
             }
           }
         ],
