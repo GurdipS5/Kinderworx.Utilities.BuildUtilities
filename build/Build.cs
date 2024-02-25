@@ -619,7 +619,7 @@ class Build : NukeBuild
 
             string sln = Solution.Path;
             PvsStudioTool($@"-t {sln} -o {pvsfile}");
-            PlogConverter($@"-t FullHtml -o {PvsStudio} -n PVS-Log {pvsfile}");
+            PlogConverter($@"-t Html -o {PvsStudio} -n PVS-Log {pvsfile}");
 
 
 
