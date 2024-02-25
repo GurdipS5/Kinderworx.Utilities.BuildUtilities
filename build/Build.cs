@@ -851,5 +851,5 @@ class Build : NukeBuild
             GitHubCli($@"release create {releaseTag} -F {ChangeLogFile} {nuGetPackage}");
         });
 
-    public string framework = ".net8.0";
+    public string framework = "net8.0";
 }

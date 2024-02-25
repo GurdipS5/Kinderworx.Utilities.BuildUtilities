@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>Kinderworx.Utilities.BuildUtilities.Tests</ProjectName>
+  <ProjectName>Kinderworx.Utilities.BuildUtilities</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
-  <ProjectType>Test</ProjectType>
-  <ProjectGuid>f76b368c-3ce2-4457-ae29-a4743dc276fe</ProjectGuid>
-  <FullPath>D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\Kinderworx.Utilities.BuildUtilities.Tests.csproj</FullPath>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>4611d532-57a6-47d8-9fb0-a63d534d6076</ProjectGuid>
+  <FullPath>D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\.sonarqube\conf\1\FilesToAnalyze.txt" />

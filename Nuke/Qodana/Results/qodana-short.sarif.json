@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-25T19:54:15.6131962Z",
+          "startTimeUtc": "2024-02-25T21:45:50.5380813Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-25T19:54:19.1031955Z",
+              "timeUtc": "2024-02-25T21:45:53.8280436Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "b68adc74a78ca15f8b1cff31400195030f73d715",
+          "revisionId": "5a493ba2f1ed78c0c51d2e0f0a38de9acc1c117c",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-25",
-        "guid": "8dd7b3e7-086e-4601-aad1-2cb200284f83",
+        "guid": "16bb391b-1dae-40fa-bb47-2542fd6698b2",
         "properties": {
           "jobUrl": ""
         }
@@ -259,58 +259,6 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 854.0,
-                    "startColumn": 19.0,
-                    "charOffset": 25525.0,
-                    "charLength": 9.0,
-                    "snippet": {
-                      "text": "framework"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 852.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25492.0,
-                    "charLength": 60.0,
-                    "snippet": {
-                      "text": "        });\r\n\r\n    public string framework = \".net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "441bb6b9dc0dec1ccb2fdc0920e780c2bea601ffd64b2c40048b2950cd313f59"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "FieldCanBeMadeReadOnly.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Field can be made readonly",
-              "markdown": "Field can be made readonly"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
                     "startLine": 81.0,
                     "startColumn": 19.0,
                     "charOffset": 2102.0,
@@ -341,6 +289,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "4b11014c9fdbecbbaaf5dd0fe478c0627b87fcc577fdcb744feba0e495d21a70"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "FieldCanBeMadeReadOnly.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field can be made readonly",
+              "markdown": "Field can be made readonly"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 854.0,
+                    "startColumn": 19.0,
+                    "charOffset": 25525.0,
+                    "charLength": 9.0,
+                    "snippet": {
+                      "text": "framework"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 852.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25492.0,
+                    "charLength": 59.0,
+                    "snippet": {
+                      "text": "        });\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "6c1cfb6563c3f32dd10fc483d59b8adb6ec3d3a2296502fa2a6b291b2595b691"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -393,58 +393,6 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "06eeec0efcfeb751553f8c0fad181c67aeaee3b3fd337e1f540c1f64232473b4"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Field 'framework' can be made private",
-              "markdown": "Field 'framework' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 854.0,
-                    "startColumn": 5.0,
-                    "charOffset": 25511.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 852.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25492.0,
-                    "charLength": 60.0,
-                    "snippet": {
-                      "text": "        });\r\n\r\n    public string framework = \".net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "487f1b49c7636c4e8c7505c017ca75da505c93270e79f8d652e1eef37611c62b"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -549,6 +497,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "92defcf855fffc135c5b08f8ec0a26758c6f814cb72f2c7278e1a55696fc79ea"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field 'framework' can be made private",
+              "markdown": "Field 'framework' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 854.0,
+                    "startColumn": 5.0,
+                    "charOffset": 25511.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 852.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25492.0,
+                    "charLength": 59.0,
+                    "snippet": {
+                      "text": "        });\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "d0b0e5d72ea4ce3c9abacdd9d141318fe8cb9cfcfb88a27b827afd44c466a7ee"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
