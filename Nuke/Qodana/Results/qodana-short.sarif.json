@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-25T22:53:29.3284223Z",
+          "startTimeUtc": "2024-02-25T22:57:57.3424382Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-25T22:53:33.0124339Z",
+              "timeUtc": "2024-02-25T22:58:00.9965311Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "dcd264d7826c2c13811aa1a7196037128db77814",
+          "revisionId": "e8d41adaf62a9020b623b11aeb00a79060e3361d",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-25",
-        "guid": "b4a0fae3-5b05-40be-b91f-1296507b27b8",
+        "guid": "6d100d5c-2ec3-4c57-9b9c-7802ff3c1ba7",
         "properties": {
           "jobUrl": ""
         }

@@ -1,1 +1,0 @@
- (2xmlXghrTests/'/'.opencover.xml
