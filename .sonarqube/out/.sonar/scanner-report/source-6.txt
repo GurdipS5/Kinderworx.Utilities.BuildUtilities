@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="28" visitedSequencePoints="3" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="10.71" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="6" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="5" />
   <Modules>
-    <Module hash="9C995601-A4EE-4F71-9BCE-609062D63938">
+    <Module hash="227397F8-DE9A-440B-B8FA-EF3B4CEA30B4">
       <ModulePath>Kinderworx.Utilities.BuildUtilities.dll</ModulePath>
-      <ModuleTime>2024-02-25T04:20:46</ModuleTime>
+      <ModuleTime>2024-02-25T06:09:50</ModuleTime>
       <ModuleName>Kinderworx.Utilities.BuildUtilities</ModuleName>
       <Files>
         <File uid="1" fullPath="D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs" />
