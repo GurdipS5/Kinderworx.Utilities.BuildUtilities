@@ -1,1 +1,1 @@
- (2xmlXghrTests/'/'.opencover.xml
+ (2xmlXghrTests/results.opencover.xml
