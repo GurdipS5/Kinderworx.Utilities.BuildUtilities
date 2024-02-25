@@ -8,8 +8,8 @@
     "YAML",
     ".gitignore (GitIgnore)",
     "Shell Script",
+    "XML",
     "C#",
-    "EditorConfig",
-    "XML"
+    "EditorConfig"
   ]
 }

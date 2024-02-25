@@ -7,4 +7,5 @@ D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visual
 D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
 D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\'.opencover.xml
+D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\results\'.opencover.xml
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results.opencover.xml
