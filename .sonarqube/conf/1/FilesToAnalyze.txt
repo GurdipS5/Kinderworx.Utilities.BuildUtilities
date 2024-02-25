@@ -9,3 +9,4 @@ D:\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utilit
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\'.opencover.xml
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\results\'.opencover.xml
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results.opencover.xml
+D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results\coverage.opencover.xml
