@@ -667,7 +667,7 @@ class Build : NukeBuild
        .AssuredAfterFailure()
         .Executes(() =>
         {
-     //           DotNet($"build {utilsProjectPath} -f {} --self-contained {SelfContained} --output {PublishFolder}");
+                DotNet($"build {utilsProjectPath} -f {framework} --self-contained {SelfContained} --output {PublishFolder}");
         });
 
 
@@ -851,6 +851,5 @@ class Build : NukeBuild
             GitHubCli($@"release create {releaseTag} -F {ChangeLogFile} {nuGetPackage}");
         });
 
-
-
+    public string framework = ".net8.0";
 }

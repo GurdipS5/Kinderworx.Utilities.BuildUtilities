@@ -10,4 +10,3 @@ D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\'.opencove
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\'\results\'.opencover.xml
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results.opencover.xml
 D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\results\coverage.opencover.xml
-D:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Tests\unittestresults\coverage.opencover.xml

@@ -337,9 +337,6 @@ Project [Name:Kinderworx.Utilities.BuildUtilities.Tests, GUID:3d2b670f-3cdd-40fa
     ProjectFileImpl(Path : results.opencover.xml)[NONE ]
     ProjectFileImpl(Path : testhost.dll (..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.dll))[Hidden CONTENT ]
     ProjectFileImpl(Path : testhost.exe (..\..\..\..\Nuget\microsoft.testplatform.testhost\17.6.0\build\netcoreapp3.1\x64\testhost.exe))[Hidden CONTENT ]
-    Folder [Name:unittestresults]
-      Child items:
-        ProjectFileImpl(Path : coverage.opencover.xml)[NONE ]
     ProjectFileImpl(Path : xunit.runner.reporters.netcoreapp10.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll))[Hidden NONE ]
     ProjectFileImpl(Path : xunit.runner.utility.netcoreapp10.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.utility.netcoreapp10.dll))[Hidden NONE ]
     ProjectFileImpl(Path : xunit.runner.visualstudio.dotnetcore.testadapter.dll (..\..\..\..\Nuget\xunit.runner.visualstudio\2.4.5\build\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll))[Hidden NONE ]
@@ -638,12 +635,12 @@ Project [Name:_build, GUID:8e4968a7-8282-4252-8672-be9fda4b19ef]
         ProjectFileImpl(Path : version.json (..\..\version.json))[NONE ]
     Folder [Name:logs, AllowsNonExistence:true]
       Child items:
-        ProjectFileImpl(Path : build.2024-02-25_18-08-35.log (..\..\.nuke\temp\build.2024-02-25_18-08-35.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_18-22-23.log (..\..\.nuke\temp\build.2024-02-25_18-22-23.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_18-30-46.log (..\..\.nuke\temp\build.2024-02-25_18-30-46.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_18-34-26.log (..\..\.nuke\temp\build.2024-02-25_18-34-26.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_18-39-21.log (..\..\.nuke\temp\build.2024-02-25_18-39-21.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_19-13-07.log (..\..\.nuke\temp\build.2024-02-25_19-13-07.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-25_19-52-54.log (..\..\.nuke\temp\build.2024-02-25_19-52-54.log))[NONE ]
         ProjectFileImpl(Path : build.log (..\..\.nuke\temp\build.log))[NONE ]
     Folder [Name:obj, IsHidden:true]
       Child items:
