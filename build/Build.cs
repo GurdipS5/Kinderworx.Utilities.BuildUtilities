@@ -661,7 +661,7 @@ class Build : NukeBuild
        .AssuredAfterFailure()
         .Executes(() =>
         {
-                DotNet($"build {utilsProjectPath} -f {Framework} --self-contained {SelfContained} --output {PublishFolder}");
+     //           DotNet($"build {utilsProjectPath} -f {} --self-contained {SelfContained} --output {PublishFolder}");
         });
 
 
