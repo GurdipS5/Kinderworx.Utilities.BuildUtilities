@@ -1,1 +1,1 @@
- (2csXhrTests/UnitTest1.cs
+ (2xmlXghrTests/'/'.opencover.xml

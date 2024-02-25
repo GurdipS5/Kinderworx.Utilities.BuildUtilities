@@ -234,6 +234,12 @@ class Build : NukeBuild
     AbsolutePath TestsDirectory => RootDirectory / "Tests";
 
     /// <summary>
+    /// Directory of MSTests project.
+    /// </summary>
+    AbsolutePath CoverletSrc => RootDirectory / "Tests" / "unittestresults";
+
+
+    /// <summary>
     /// Target path.
     /// </summary>
     readonly AbsolutePath TargetPath = RootDirectory / "Nuke" / "Output" / "Coverlet" / "Report";
@@ -681,7 +687,7 @@ class Build : NukeBuild
             DotNet($@"test {testProj.ToString()} /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./unittestresults/");
 
             // Coverage xml file.
-            var sourceFile = Path.Combine(TestsDirectory.ToString(), "coverage.opencover.xml");
+            var sourceFile = Path.Combine(CoverletSrc.ToString(), "coverage.opencover.xml");
             CoverletFile = Path.Combine(CoverletOutput.ToString(), "coverage.opencover.xml");
 
             File.Copy(sourceFile, CoverletFile, true);
