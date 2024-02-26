@@ -1,50 +1,56 @@
 
-?Kinderworx.Utilities.BuildUtilities.BuildUtils.GetProjectName()y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs (+"0*“
+KKinderworx.Utilities.BuildUtilities.BuildUtils.ZipDirectory(string, string)y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs3 3('"0*è
 0y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs %(#ï
-ì
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs  (; 
-%0System.Reflection.Assembly"-System.Reflection.Assembly.GetEntryAssembly()*"
-System.Reflection.AssemblyÐ
-Í
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs (;&
-assemblySystem.Reflection.Assembly"__id*"
- 
-%0System.Reflection.Assemblyíê
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs "  (3
-%1string"'System.Reflection.Assembly.Location.get*(
-&
-assemblySystem.Reflection.Assembly2Location.get¬
-©
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs   (3
-assemblyPathstring"__id*
-
-%1stringß
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs5 5(*ß
 Ü
 y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs#& #(D
-%2string"#System.IO.Path.GetFileName(string?)*"
-System.IO.Path*
-
-assemblyPathstring°
-­
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs# #(D
-assemblyFileNamestring"__id*
-
-%2string"™
-y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs% %($
-
-assemblyFileNamestring*‘
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs5 5(+
+
+%0bool"#System.IO.Directory.Exists(string?)*"
+System.IO.Directory*
+
+	directorystring*
+1
+2*¢
 1y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs&	 &(	"
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs7 7(>œ
+™
 y
-oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs& &(	
-implicit returnB2"0
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs7 7(?
+
+%1void"ASystem.IO.Compression.ZipFile.CreateFromDirectory(string, string)*!"
+System.IO.Compression.ZipFile*
+
+	directorystring*
+
+zipPathstring*
+3*Ñ
+2y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs< =(6ú
+÷
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs< <(4
+%2System.IO.DirectoryInfo"+System.IO.Directory.CreateDirectory(string)*"
+System.IO.Directory*
+
+	directorystringÐÍ
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs= =(6*
+%3$System.IO.DirectoryNotFoundException"$System.IO.DirectoryNotFoundExceptionû
+ø
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.cs= =(4
+
+%4void"ASystem.IO.DirectoryNotFoundException.DirectoryNotFoundException()*,
+*
+%3$System.IO.DirectoryNotFoundException*
+3*‘
+3y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.csA	 A(	"
+y
+oD:\Repositories\Utilities\Kinderworx.Utilities.BuildUtilities\Kinderworx.Utilities.BuildUtilities\BuildUtils.csA A(	
+implicit return:
+	directorystring:
+zipPathstringB2"0
 .Kinderworx.Utilities.BuildUtilities.BuildUtils

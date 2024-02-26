@@ -851,5 +851,10 @@ class Build : NukeBuild
             GitHubCli($@"release create {releaseTag} -F {ChangeLogFile} {nuGetPackage}");
         });
 
+    public virtual void OnTargetFailed(string target)
+    {
+        Directory.Delete(NukeOut);
+    }
+
     public string framework = "net8.0";
 }
