@@ -537,6 +537,7 @@ class Build : NukeBuild
             if (IsServerBuild)
             {
                 BuildUtils.ZipDirectory(NDependOutput, ndependPath);
+                Console.WriteLine($"##teamcity[publishArtifacts '{NDependOutput}']");
             }
         });
 
@@ -851,7 +852,7 @@ class Build : NukeBuild
             GitHubCli($@"release create {releaseTag} -F {ChangeLogFile} {nuGetPackage}");
         });
 
-    protected virtual void OnBuildFinished(string target)
+    protected override void OnBuildFinished()
     {
         Directory.Delete(NukeOut);
     }

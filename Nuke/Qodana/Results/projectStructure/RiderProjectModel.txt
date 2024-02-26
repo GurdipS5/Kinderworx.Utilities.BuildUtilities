@@ -635,12 +635,12 @@ Project [Name:_build, GUID:8e4968a7-8282-4252-8672-be9fda4b19ef]
         ProjectFileImpl(Path : version.json (..\..\version.json))[NONE ]
     Folder [Name:logs, AllowsNonExistence:true]
       Child items:
-        ProjectFileImpl(Path : build.2024-02-25_22-52-04.log (..\..\.nuke\temp\build.2024-02-25_22-52-04.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-25_22-56-32.log (..\..\.nuke\temp\build.2024-02-25_22-56-32.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-26_01-09-03.log (..\..\.nuke\temp\build.2024-02-26_01-09-03.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-26_01-23-25.log (..\..\.nuke\temp\build.2024-02-26_01-23-25.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-26_01-26-20.log (..\..\.nuke\temp\build.2024-02-26_01-26-20.log))[NONE ]
         ProjectFileImpl(Path : build.2024-02-26_01-30-32.log (..\..\.nuke\temp\build.2024-02-26_01-30-32.log))[NONE ]
+        ProjectFileImpl(Path : build.2024-02-26_01-36-19.log (..\..\.nuke\temp\build.2024-02-26_01-36-19.log))[NONE ]
         ProjectFileImpl(Path : build.log (..\..\.nuke\temp\build.log))[NONE ]
     Folder [Name:obj, IsHidden:true]
       Child items:
