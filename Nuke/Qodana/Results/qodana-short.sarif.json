@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-26T01:24:40.2282104Z",
+          "startTimeUtc": "2024-02-26T01:27:50.7198147Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-26T01:24:43.8551478Z",
+              "timeUtc": "2024-02-26T01:27:54.536511Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "e8e93390718bfbc7f4745e7aac061ebcaf75bdfc",
+          "revisionId": "84cf2d18fdbf80e51ea33076ac7a962ce470dd98",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-26",
-        "guid": "72f6e5d6-057a-4687-9c9b-92321dc6c19e",
+        "guid": "68206e02-4a18-4fe9-9e03-1f53fdd01fa7",
         "properties": {
           "jobUrl": ""
         }
@@ -244,58 +244,6 @@
             }
           },
           {
-            "ruleId": "ClassWithVirtualMembersNeverInherited.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Class 'Build' has some virtual members but no inheritors",
-              "markdown": "Class 'Build' has some virtual members but no inheritors"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 26.0,
-                    "startColumn": 7.0,
-                    "charOffset": 696.0,
-                    "charLength": 5.0,
-                    "snippet": {
-                      "text": "Build"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 24.0,
-                    "startColumn": 1.0,
-                    "charOffset": 657.0,
-                    "charLength": 79.0,
-                    "snippet": {
-                      "text": "using System.Threading.Tasks;\r\n\r\nclass Build : NukeBuild\r\n{\r\n    /// <summary>\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "587fa68798685b33d208f9e7802a9a22e89f44ed97534ad9092457cd74369b09"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
             "ruleId": "FieldCanBeMadeReadOnly.Global",
             "kind": "fail",
             "level": "note",
@@ -365,7 +313,7 @@
                   "region": {
                     "startLine": 859.0,
                     "startColumn": 19.0,
-                    "charOffset": 25628.0,
+                    "charOffset": 25632.0,
                     "charLength": 9.0,
                     "snippet": {
                       "text": "framework"
@@ -375,7 +323,7 @@
                   "contextRegion": {
                     "startLine": 857.0,
                     "startColumn": 1.0,
-                    "charOffset": 25601.0,
+                    "charOffset": 25605.0,
                     "charLength": 53.0,
                     "snippet": {
                       "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
@@ -392,7 +340,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "7519094ff64535f3d968e7cbcb5d84624d31c0223e7ed8e8bdd185020a667e20"
+              "equalIndicator/v1": "c9573c877f1dbede0059da2098d45c24c718b436af95d98bd63eba17c27a8f22"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -445,58 +393,6 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "06eeec0efcfeb751553f8c0fad181c67aeaee3b3fd337e1f540c1f64232473b4"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Field 'framework' can be made private",
-              "markdown": "Field 'framework' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 859.0,
-                    "startColumn": 5.0,
-                    "charOffset": 25614.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 857.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25601.0,
-                    "charLength": 53.0,
-                    "snippet": {
-                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "7a3dcf0ec8dc35e439e4dcfd66defbec0c333277ab3a5a78643b3c475681d4fc"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -653,6 +549,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "d52a1137ce325a94f043b253f67e3324bd0e3dc6b6e6c48f614eb0ba11dd9ec9"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field 'framework' can be made private",
+              "markdown": "Field 'framework' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 859.0,
+                    "startColumn": 5.0,
+                    "charOffset": 25618.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 857.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25605.0,
+                    "charLength": 53.0,
+                    "snippet": {
+                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "fb8f843671d53297f57d64112c35e9956ff677d6450064d62498ef06e4b2390c"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -1028,58 +976,6 @@
             "kind": "fail",
             "level": "note",
             "message": {
-              "text": "Method 'OnTargetFailed' is never used",
-              "markdown": "Method 'OnTargetFailed' is never used"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 854.0,
-                    "startColumn": 25.0,
-                    "charOffset": 25527.0,
-                    "charLength": 14.0,
-                    "snippet": {
-                      "text": "OnTargetFailed"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 852.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25488.0,
-                    "charLength": 112.0,
-                    "snippet": {
-                      "text": "        });\r\n\r\n    public virtual void OnTargetFailed(string target)\r\n    {\r\n        Directory.Delete(NukeOut);\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "0a877ed89775e524e2b64b2f5bc31bccd67394c9279bf5ebfd15d322553aebd4"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "UnusedMember.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
               "text": "Property 'utilsProjectDir' is never used",
               "markdown": "Property 'utilsProjectDir' is never used"
             },
@@ -1173,58 +1069,6 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "c19bcd7511e7f05f02b791ee5f58f61db9b71067a9fb25aa222befb2a08b15e2"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "UnusedParameter.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Parameter 'target' is never used",
-              "markdown": "Parameter 'target' is never used"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 854.0,
-                    "startColumn": 47.0,
-                    "charOffset": 25549.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "target"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 852.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25488.0,
-                    "charLength": 112.0,
-                    "snippet": {
-                      "text": "        });\r\n\r\n    public virtual void OnTargetFailed(string target)\r\n    {\r\n        Directory.Delete(NukeOut);\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "4f0cd9fe541737607bfafa54b986a808f820932313a6f736bde3be82305082c9"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
