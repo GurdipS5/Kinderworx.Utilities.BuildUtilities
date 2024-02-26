@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-26T01:37:32.7817221Z",
+          "startTimeUtc": "2024-02-26T01:48:23.4020476Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-26T01:37:36.5409568Z",
+              "timeUtc": "2024-02-26T01:48:26.8313096Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "443e79dc521ab48af680c9f813129f472b77c75d",
+          "revisionId": "1e997d24cb18f45a8328b20fdf29025afcdda995",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-26",
-        "guid": "330adb48-18c0-4b6c-bbc9-d6cc6e90127e",
+        "guid": "50905679-487c-48b3-9a73-f5de4e2bbefe",
         "properties": {
           "jobUrl": ""
         }
@@ -259,58 +259,6 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 860.0,
-                    "startColumn": 19.0,
-                    "charOffset": 25707.0,
-                    "charLength": 9.0,
-                    "snippet": {
-                      "text": "framework"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 858.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25680.0,
-                    "charLength": 53.0,
-                    "snippet": {
-                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "03d097a4ed3960646aabe4323337963146a663d54a1477b5c866a3cd8a5a43c9"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "FieldCanBeMadeReadOnly.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Field can be made readonly",
-              "markdown": "Field can be made readonly"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
                     "startLine": 81.0,
                     "startColumn": 19.0,
                     "charOffset": 2102.0,
@@ -345,6 +293,162 @@
             "properties": {
               "ideaSeverity": "WEAK WARNING",
               "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "FieldCanBeMadeReadOnly.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field can be made readonly",
+              "markdown": "Field can be made readonly"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 860.0,
+                    "startColumn": 19.0,
+                    "charOffset": 25713.0,
+                    "charLength": 9.0,
+                    "snippet": {
+                      "text": "framework"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 858.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25686.0,
+                    "charLength": 53.0,
+                    "snippet": {
+                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "a7a6376b06f60b5626354699c27555ead3932b8f5e8092a48e9ae7de1937a8c8"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "IgnoreFileDuplicateEntry",
+            "kind": "fail",
+            "level": "warning",
+            "message": {
+              "text": "'*.aps' pattern is defined more than once",
+              "markdown": "`*.aps` pattern is defined more than once"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": ".gitignore",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 308.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5578.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "*.aps"
+                    },
+                    "sourceLanguage": "IgnoreLang"
+                  },
+                  "contextRegion": {
+                    "startLine": 306.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5536.0,
+                    "charLength": 92.0,
+                    "snippet": {
+                      "text": "# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r\n# Visual Studio LightSwitch build output\r"
+                    },
+                    "sourceLanguage": "GitIgnore"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "305d4e113dc870ac95b31012b02d7a7a5655b1eb6097ca560d30eb2ebd9c1553"
+            },
+            "properties": {
+              "ideaSeverity": "WARNING",
+              "qodanaSeverity": "High"
+            }
+          },
+          {
+            "ruleId": "IgnoreFileDuplicateEntry",
+            "kind": "fail",
+            "level": "warning",
+            "message": {
+              "text": "'*.ncb' pattern is defined more than once",
+              "markdown": "`*.ncb` pattern is defined more than once"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": ".gitignore",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 307.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5571.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "*.ncb"
+                    },
+                    "sourceLanguage": "IgnoreLang"
+                  },
+                  "contextRegion": {
+                    "startLine": 305.0,
+                    "startColumn": 1.0,
+                    "charOffset": 5534.0,
+                    "charLength": 52.0,
+                    "snippet": {
+                      "text": "\r\n# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r"
+                    },
+                    "sourceLanguage": "GitIgnore"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "d9e7434435f56f802b1d9581070b99aac14a6a026265f596d7c7babde720768b"
+            },
+            "properties": {
+              "ideaSeverity": "WARNING",
+              "qodanaSeverity": "High"
             }
           },
           {
@@ -417,7 +521,7 @@
                   "region": {
                     "startLine": 860.0,
                     "startColumn": 5.0,
-                    "charOffset": 25693.0,
+                    "charOffset": 25699.0,
                     "charLength": 6.0,
                     "snippet": {
                       "text": "public"
@@ -427,7 +531,7 @@
                   "contextRegion": {
                     "startLine": 858.0,
                     "startColumn": 1.0,
-                    "charOffset": 25680.0,
+                    "charOffset": 25686.0,
                     "charLength": 53.0,
                     "snippet": {
                       "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
@@ -444,7 +548,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "858d7838e0a419f2eb0e1fda03644462eabf7cd316a1280ad1d995d5417ce231"
+              "equalIndicator/v1": "5a777fa043c5386adaf7669b5f343f51c5cd90561e2a5d3f8a9e97730c0aa1b0"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -1087,6 +1191,58 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
+                    "uri": "Tests/results.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 28.0,
+                    "startColumn": 159.0,
+                    "charOffset": 2452.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 26.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2229.0,
+                    "charLength": 435.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"3\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"0\" offset=\"0\" sc=\"0\" sl=\"15\" ec=\"1\" el=\"20\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "20df3b0cec7007b7e6065e5109c1ea1df39b945117c439a743769fa7cd2d8b84"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
                     "uri": "Tests/'/'.opencover.xml",
                     "uriBaseId": "SRCROOT"
                   },
@@ -1173,6 +1329,110 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "300f5a431a6b65c621c0435f0ca59bf941ddd7d790d0775c72701ca7db7726dc"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/results.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 77.0,
+                    "startColumn": 159.0,
+                    "charOffset": 7474.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 75.0,
+                    "startColumn": 1.0,
+                    "charOffset": 7168.0,
+                    "charLength": 518.0,
+                    "snippet": {
+                      "text": "                <BranchPoint vc=\"0\" uspid=\"53\" ordinal=\"1\" path=\"1\" offset=\"9\" offsetend=\"23\" sl=\"53\" fileid=\"1\" />\r\n              </BranchPoints>\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"3\" offset=\"3\" sc=\"0\" sl=\"52\" ec=\"1\" el=\"65\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "46cf8de5e479bbd451b06bc97c9b041bc90571353bcc223468d8c0beb07af585"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/results.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 55.0,
+                    "startColumn": 159.0,
+                    "charOffset": 5167.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 53.0,
+                    "startColumn": 1.0,
+                    "charOffset": 4944.0,
+                    "charLength": 432.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"2\" offset=\"2\" sc=\"0\" sl=\"45\" ec=\"1\" el=\"45\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"2\" nPathComplexity=\"2\" sequenceCoverage=\"0\" branchCoverage=\"0\" isConstructor=\"True\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "5518ed1834a3e4731c1b9049019a41ee20c884410f3ab6c68998272be386732a"
             },
             "properties": {
               "ideaSeverity": "ERROR",
@@ -1295,6 +1555,58 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
+                    "uri": "Tests/results.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 44.0,
+                    "startColumn": 159.0,
+                    "charOffset": 4112.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 42.0,
+                    "startColumn": 1.0,
+                    "charOffset": 3889.0,
+                    "charLength": 435.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"1\" offset=\"1\" sc=\"0\" sl=\"26\" ec=\"1\" el=\"38\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "8415233ef92bbfb216b42a65ed9f75b9b3c975f991b6e71b04f1cd9e09e92717"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
                     "uri": "Tests/'/'.opencover.xml",
                     "uriBaseId": "SRCROOT"
                   },
@@ -1329,6 +1641,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "90ce26f87c35a85f334b18b4cb09fb8e1439331c966d80a5016731d72b9767a1"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/results.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 96.0,
+                    "startColumn": 159.0,
+                    "charOffset": 9513.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 94.0,
+                    "startColumn": 1.0,
+                    "charOffset": 9290.0,
+                    "charLength": 276.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"4\" offset=\"4\" sc=\"0\" sl=\"74\" ec=\"1\" el=\"90\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n          </Methods>\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "cde27819b2efd97bf2fe829333855ba1df6bfb0f6444ee800d09d6d5f57647dd"
             },
             "properties": {
               "ideaSeverity": "ERROR",

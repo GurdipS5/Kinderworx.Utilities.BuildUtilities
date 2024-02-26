@@ -854,7 +854,7 @@ class Build : NukeBuild
 
     protected override void OnBuildFinished()
     {
-        Directory.Delete(NukeOut);
+        Directory.Delete(NukeOut, true);
     }
 
     public string framework = "net8.0";
