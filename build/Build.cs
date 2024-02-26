@@ -851,7 +851,7 @@ class Build : NukeBuild
             GitHubCli($@"release create {releaseTag} -F {ChangeLogFile} {nuGetPackage}");
         });
 
-    protected override void OnTargetFailed(string target)
+    protected virtual void OnBuildFinished(string target)
     {
         Directory.Delete(NukeOut);
     }

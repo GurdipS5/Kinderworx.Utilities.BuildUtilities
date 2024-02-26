@@ -2,5 +2,5 @@ projectKey=Kinderworx-Utilities-BuildUtilities
 serverUrl=http://10.1.0.11:9000
 serverVersion=9.7.1.62043
 dashboardUrl=http://10.1.0.11:9000/dashboard?id=Kinderworx-Utilities-BuildUtilities
-ceTaskId=AY3jBzVkKzMSoiVSHGrL
-ceTaskUrl=http://10.1.0.11:9000/api/ce/task?id=AY3jBzVkKzMSoiVSHGrL
+ceTaskId=AY3jCuSNKzMSoiVSHGrM
+ceTaskUrl=http://10.1.0.11:9000/api/ce/task?id=AY3jCuSNKzMSoiVSHGrM

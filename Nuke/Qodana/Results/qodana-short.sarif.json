@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-26T01:27:50.7198147Z",
+          "startTimeUtc": "2024-02-26T01:31:54.8124935Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-26T01:27:54.536511Z",
+              "timeUtc": "2024-02-26T01:31:58.4588009Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "84cf2d18fdbf80e51ea33076ac7a962ce470dd98",
+          "revisionId": "bb107c7a8861bd841c32e24ff81cad050fcce20e",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -55,7 +55,7 @@
       "results": [],
       "automationDetails": {
         "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-26",
-        "guid": "68206e02-4a18-4fe9-9e03-1f53fdd01fa7",
+        "guid": "fd207945-6623-4044-966e-1e5751430345",
         "properties": {
           "jobUrl": ""
         }
@@ -241,6 +241,58 @@
             "properties": {
               "ideaSeverity": "TYPO",
               "qodanaSeverity": "Low"
+            }
+          },
+          {
+            "ruleId": "ClassWithVirtualMembersNeverInherited.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Class 'Build' has some virtual members but no inheritors",
+              "markdown": "Class 'Build' has some virtual members but no inheritors"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 26.0,
+                    "startColumn": 7.0,
+                    "charOffset": 696.0,
+                    "charLength": 5.0,
+                    "snippet": {
+                      "text": "Build"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 24.0,
+                    "startColumn": 1.0,
+                    "charOffset": 657.0,
+                    "charLength": 79.0,
+                    "snippet": {
+                      "text": "using System.Threading.Tasks;\r\n\r\nclass Build : NukeBuild\r\n{\r\n    /// <summary>\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "587fa68798685b33d208f9e7802a9a22e89f44ed97534ad9092457cd74369b09"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
             }
           },
           {
@@ -1028,6 +1080,58 @@
             "kind": "fail",
             "level": "note",
             "message": {
+              "text": "Method 'OnBuildFinished' is never used",
+              "markdown": "Method 'OnBuildFinished' is never used"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 854.0,
+                    "startColumn": 28.0,
+                    "charOffset": 25530.0,
+                    "charLength": 15.0,
+                    "snippet": {
+                      "text": "OnBuildFinished"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 852.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25488.0,
+                    "charLength": 116.0,
+                    "snippet": {
+                      "text": "        });\r\n\r\n    protected virtual void OnBuildFinished(string target)\r\n    {\r\n        Directory.Delete(NukeOut);\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "8297642ad26f9e16983a49d06250b0be25206d4c0b5acd8b7824823e26cdf30d"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "UnusedMember.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
               "text": "Method 'GetProjectName' is never used",
               "markdown": "Method 'GetProjectName' is never used"
             },
@@ -1069,6 +1173,58 @@
             ],
             "partialFingerprints": {
               "equalIndicator/v1": "c19bcd7511e7f05f02b791ee5f58f61db9b71067a9fb25aa222befb2a08b15e2"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "UnusedParameter.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Parameter 'target' is never used",
+              "markdown": "Parameter 'target' is never used"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 854.0,
+                    "startColumn": 51.0,
+                    "charOffset": 25553.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "target"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 852.0,
+                    "startColumn": 1.0,
+                    "charOffset": 25488.0,
+                    "charLength": 116.0,
+                    "snippet": {
+                      "text": "        });\r\n\r\n    protected virtual void OnBuildFinished(string target)\r\n    {\r\n        Directory.Delete(NukeOut);\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "ae36ff4fd23c3c423f0bf42a933f10c467841af03a3ab93cc33dc15c3a0d4c2d"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
