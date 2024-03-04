@@ -21,7 +21,7 @@
       },
       "invocations": [
         {
-          "startTimeUtc": "2024-02-26T01:48:23.4020476Z",
+          "startTimeUtc": "2024-03-04T01:23:51.6221192Z",
           "exitCode": 0,
           "toolExecutionNotifications": [
             {
@@ -29,7 +29,7 @@
                 "text": "Reporting from [] 'sanity' inspections was suspended due to high problems count."
               },
               "level": "error",
-              "timeUtc": "2024-02-26T01:48:26.8313096Z",
+              "timeUtc": "2024-03-04T01:23:57.7905374Z",
               "properties": {
                 "qodanaKind": "sanityFailure"
               }
@@ -42,7 +42,7 @@
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
-          "revisionId": "1e997d24cb18f45a8328b20fdf29025afcdda995",
+          "revisionId": "25bb69ad6aa35f940ae8a9b92a5d62cb37720be3",
           "branch": "master",
           "properties": {
             "repoUrl": "https://github.com/GurdipS5/Kinderworx.Utilities.BuildUtilities.git",
@@ -54,8 +54,8 @@
       ],
       "results": [],
       "automationDetails": {
-        "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-02-26",
-        "guid": "50905679-487c-48b3-9a73-f5de4e2bbefe",
+        "id": "Kinderworx.Utilities.BuildUtilities/qodana/2024-03-04",
+        "guid": "c87a0822-2b4f-4b10-9764-415c059720b3",
         "properties": {
           "jobUrl": ""
         }
@@ -259,22 +259,22 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 81.0,
+                    "startLine": 89.0,
                     "startColumn": 19.0,
-                    "charOffset": 2102.0,
-                    "charLength": 5.0,
+                    "charOffset": 2172.0,
+                    "charLength": 9.0,
                     "snippet": {
-                      "text": "Space"
+                      "text": "framework"
                     },
                     "sourceLanguage": "C#"
                   },
                   "contextRegion": {
-                    "startLine": 79.0,
+                    "startLine": 87.0,
                     "startColumn": 1.0,
-                    "charOffset": 2080.0,
-                    "charLength": 39.0,
+                    "charOffset": 2126.0,
+                    "charLength": 143.0,
                     "snippet": {
-                      "text": "\r\n\r\n    public string Space = \" \";\r\n\r\n\r"
+                      "text": "    #region NetCoreBuild\r\n\r\n    public string framework = \"net8.0\";\r\n    string SelfContained = string.Empty;\r\n    string runtime = \"win-x64\";\r"
                     },
                     "sourceLanguage": "C#"
                   }
@@ -288,7 +288,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "4b11014c9fdbecbbaaf5dd0fe478c0627b87fcc577fdcb744feba0e495d21a70"
+              "equalIndicator/v1": "4e650fd287e5bb0c87dbdd60aed912fe10fd7c62e7b427d48bc8811388401cc5"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -311,178 +311,22 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 860.0,
+                    "startLine": 83.0,
                     "startColumn": 19.0,
-                    "charOffset": 25713.0,
-                    "charLength": 9.0,
-                    "snippet": {
-                      "text": "framework"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 858.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25686.0,
-                    "charLength": 53.0,
-                    "snippet": {
-                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "a7a6376b06f60b5626354699c27555ead3932b8f5e8092a48e9ae7de1937a8c8"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "IgnoreFileDuplicateEntry",
-            "kind": "fail",
-            "level": "warning",
-            "message": {
-              "text": "'*.aps' pattern is defined more than once",
-              "markdown": "`*.aps` pattern is defined more than once"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": ".gitignore",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 308.0,
-                    "startColumn": 1.0,
-                    "charOffset": 5578.0,
+                    "charOffset": 2106.0,
                     "charLength": 5.0,
                     "snippet": {
-                      "text": "*.aps"
-                    },
-                    "sourceLanguage": "IgnoreLang"
-                  },
-                  "contextRegion": {
-                    "startLine": 306.0,
-                    "startColumn": 1.0,
-                    "charOffset": 5536.0,
-                    "charLength": 92.0,
-                    "snippet": {
-                      "text": "# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r\n# Visual Studio LightSwitch build output\r"
-                    },
-                    "sourceLanguage": "GitIgnore"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "305d4e113dc870ac95b31012b02d7a7a5655b1eb6097ca560d30eb2ebd9c1553"
-            },
-            "properties": {
-              "ideaSeverity": "WARNING",
-              "qodanaSeverity": "High"
-            }
-          },
-          {
-            "ruleId": "IgnoreFileDuplicateEntry",
-            "kind": "fail",
-            "level": "warning",
-            "message": {
-              "text": "'*.ncb' pattern is defined more than once",
-              "markdown": "`*.ncb` pattern is defined more than once"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": ".gitignore",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 307.0,
-                    "startColumn": 1.0,
-                    "charOffset": 5571.0,
-                    "charLength": 5.0,
-                    "snippet": {
-                      "text": "*.ncb"
-                    },
-                    "sourceLanguage": "IgnoreLang"
-                  },
-                  "contextRegion": {
-                    "startLine": 305.0,
-                    "startColumn": 1.0,
-                    "charOffset": 5534.0,
-                    "charLength": 52.0,
-                    "snippet": {
-                      "text": "\r\n# Visual Studio 6 technical files\r\n*.ncb\r\n*.aps\r\n\r"
-                    },
-                    "sourceLanguage": "GitIgnore"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "d9e7434435f56f802b1d9581070b99aac14a6a026265f596d7c7babde720768b"
-            },
-            "properties": {
-              "ideaSeverity": "WARNING",
-              "qodanaSeverity": "High"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Property 'utilsProjectName' can be made private",
-              "markdown": "Property 'utilsProjectName' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 66.0,
-                    "startColumn": 5.0,
-                    "charOffset": 1800.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
+                      "text": "Space"
                     },
                     "sourceLanguage": "C#"
                   },
                   "contextRegion": {
-                    "startLine": 64.0,
+                    "startLine": 81.0,
                     "startColumn": 1.0,
-                    "charOffset": 1744.0,
-                    "charLength": 127.0,
+                    "charOffset": 2084.0,
+                    "charLength": 39.0,
                     "snippet": {
-                      "text": "    public string utilsProjectDir { get; set;  }\r\n\r\n    public string utilsProjectName { get; private set; }\r\n\r\n    #endregion\r"
+                      "text": "\r\n\r\n    public string Space = \" \";\r\n\r\n\r"
                     },
                     "sourceLanguage": "C#"
                   }
@@ -496,215 +340,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "06eeec0efcfeb751553f8c0fad181c67aeaee3b3fd337e1f540c1f64232473b4"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Field 'framework' can be made private",
-              "markdown": "Field 'framework' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 860.0,
-                    "startColumn": 5.0,
-                    "charOffset": 25699.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 858.0,
-                    "startColumn": 1.0,
-                    "charOffset": 25686.0,
-                    "charLength": 53.0,
-                    "snippet": {
-                      "text": "    }\r\n\r\n    public string framework = \"net8.0\";\r\n}\r\n"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "5a777fa043c5386adaf7669b5f343f51c5cd90561e2a5d3f8a9e97730c0aa1b0"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Property 'OctopusVersion' can be made private",
-              "markdown": "Property 'OctopusVersion' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 70.0,
-                    "startColumn": 5.0,
-                    "charOffset": 1878.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 68.0,
-                    "startColumn": 1.0,
-                    "charOffset": 1856.0,
-                    "charLength": 129.0,
-                    "snippet": {
-                      "text": "    #endregion\r\n\r\n    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "8f4f0b0a3c7de52ecd53f5fbd1ab6152bd0b06b4a65dcc38a68e26def1a71ef9"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Property 'utilsProjectPath' can be made private",
-              "markdown": "Property 'utilsProjectPath' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 59.0,
-                    "startColumn": 5.0,
-                    "charOffset": 1615.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 57.0,
-                    "startColumn": 1.0,
-                    "charOffset": 1557.0,
-                    "charLength": 132.0,
-                    "snippet": {
-                      "text": "    /// Path to the util csproj.\r\n    /// </summary>\r\n    public string utilsProjectPath { get; private set; }\r\n\r\n    /// <summary>\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "92defcf855fffc135c5b08f8ec0a26758c6f814cb72f2c7278e1a55696fc79ea"
-            },
-            "properties": {
-              "ideaSeverity": "WEAK WARNING",
-              "qodanaSeverity": "Moderate"
-            }
-          },
-          {
-            "ruleId": "MemberCanBePrivate.Global",
-            "kind": "fail",
-            "level": "note",
-            "message": {
-              "text": "Property 'CloudBuildNo' can be made private",
-              "markdown": "Property 'CloudBuildNo' can be made private"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "build/Build.cs",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 72.0,
-                    "startColumn": 5.0,
-                    "charOffset": 1936.0,
-                    "charLength": 6.0,
-                    "snippet": {
-                      "text": "public"
-                    },
-                    "sourceLanguage": "C#"
-                  },
-                  "contextRegion": {
-                    "startLine": 70.0,
-                    "startColumn": 1.0,
-                    "charOffset": 1874.0,
-                    "charLength": 132.0,
-                    "snippet": {
-                      "text": "    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r\n\r\n    /// <summary>\r"
-                    },
-                    "sourceLanguage": "C#"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "_build",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "d52a1137ce325a94f043b253f67e3324bd0e3dc6b6e6c48f614eb0ba11dd9ec9"
+              "equalIndicator/v1": "87e97333d894fd639ce3c65ba7a7c2a7b52659925ddb52825ed257795261056a"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -727,9 +363,9 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 81.0,
+                    "startLine": 83.0,
                     "startColumn": 5.0,
-                    "charOffset": 2088.0,
+                    "charOffset": 2092.0,
                     "charLength": 6.0,
                     "snippet": {
                       "text": "public"
@@ -737,9 +373,9 @@
                     "sourceLanguage": "C#"
                   },
                   "contextRegion": {
-                    "startLine": 79.0,
+                    "startLine": 81.0,
                     "startColumn": 1.0,
-                    "charOffset": 2080.0,
+                    "charOffset": 2084.0,
                     "charLength": 39.0,
                     "snippet": {
                       "text": "\r\n\r\n    public string Space = \" \";\r\n\r\n\r"
@@ -756,7 +392,267 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "fde1fb33a9e9a55664a9d8c3fe16cb451c46ab8195f5d3706b0f022469c133a7"
+              "equalIndicator/v1": "18aae01df2bafcdf3be3625a4621e66a24a521e491788ae2f532c8e97d68a2e4"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'utilsProjectName' can be made private",
+              "markdown": "Property 'utilsProjectName' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 68.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1804.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 66.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1748.0,
+                    "charLength": 127.0,
+                    "snippet": {
+                      "text": "    public string utilsProjectDir { get; set;  }\r\n\r\n    public string utilsProjectName { get; private set; }\r\n\r\n    #endregion\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "85b378dde9a1db640123dc2d2d309b50907297b04e2467f5d79b334d298b778f"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'utilsProjectPath' can be made private",
+              "markdown": "Property 'utilsProjectPath' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 61.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1619.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 59.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1561.0,
+                    "charLength": 132.0,
+                    "snippet": {
+                      "text": "    /// Path to the util csproj.\r\n    /// </summary>\r\n    public string utilsProjectPath { get; private set; }\r\n\r\n    /// <summary>\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "ae13a8a8ef9aa29a6479122fbcc3d83c04c19ab66a2357d095afac32081abc64"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'OctopusVersion' can be made private",
+              "markdown": "Property 'OctopusVersion' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 72.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1882.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 70.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1860.0,
+                    "charLength": 129.0,
+                    "snippet": {
+                      "text": "    #endregion\r\n\r\n    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "bd2138b123079136cdf13a7e7504eb01d29d83ca5f2917767231f08f0fdcfc0c"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Field 'framework' can be made private",
+              "markdown": "Field 'framework' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 89.0,
+                    "startColumn": 5.0,
+                    "charOffset": 2158.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 87.0,
+                    "startColumn": 1.0,
+                    "charOffset": 2126.0,
+                    "charLength": 143.0,
+                    "snippet": {
+                      "text": "    #region NetCoreBuild\r\n\r\n    public string framework = \"net8.0\";\r\n    string SelfContained = string.Empty;\r\n    string runtime = \"win-x64\";\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "dd6e18ea9dc37e39d91ee94b31bdd247558615e96d18c04aa22252c020cdb35a"
+            },
+            "properties": {
+              "ideaSeverity": "WEAK WARNING",
+              "qodanaSeverity": "Moderate"
+            }
+          },
+          {
+            "ruleId": "MemberCanBePrivate.Global",
+            "kind": "fail",
+            "level": "note",
+            "message": {
+              "text": "Property 'CloudBuildNo' can be made private",
+              "markdown": "Property 'CloudBuildNo' can be made private"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "build/Build.cs",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 74.0,
+                    "startColumn": 5.0,
+                    "charOffset": 1940.0,
+                    "charLength": 6.0,
+                    "snippet": {
+                      "text": "public"
+                    },
+                    "sourceLanguage": "C#"
+                  },
+                  "contextRegion": {
+                    "startLine": 72.0,
+                    "startColumn": 1.0,
+                    "charOffset": 1878.0,
+                    "charLength": 132.0,
+                    "snippet": {
+                      "text": "    public string OctopusVersion { get; private set; }\r\n\r\n    public string CloudBuildNo { get; private set; }\r\n\r\n    /// <summary>\r"
+                    },
+                    "sourceLanguage": "C#"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "_build",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "e9e99876771474e1bb4423e251833bade7d4e31a134b7fbb1910ed2eb869abc6"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -1091,9 +987,9 @@
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
-                    "startLine": 64.0,
+                    "startLine": 66.0,
                     "startColumn": 19.0,
-                    "charOffset": 1762.0,
+                    "charOffset": 1766.0,
                     "charLength": 15.0,
                     "snippet": {
                       "text": "utilsProjectDir"
@@ -1101,9 +997,9 @@
                     "sourceLanguage": "C#"
                   },
                   "contextRegion": {
-                    "startLine": 62.0,
+                    "startLine": 64.0,
                     "startColumn": 1.0,
-                    "charOffset": 1690.0,
+                    "charOffset": 1694.0,
                     "charLength": 163.0,
                     "snippet": {
                       "text": "    /// Utils project directory.\r\n    /// </summary>\r\n    public string utilsProjectDir { get; set;  }\r\n\r\n    public string utilsProjectName { get; private set; }\r"
@@ -1120,7 +1016,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "5e69a9419baa85b0adf8fd8756beda1bc2d678ceacf1ccf370e8ec4305c869be"
+              "equalIndicator/v1": "a060c7a159fe0a0fefa20bb6f71e15e11f5f0564bc42900a90a0d73754d3a2b5"
             },
             "properties": {
               "ideaSeverity": "WEAK WARNING",
@@ -1191,7 +1087,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "Tests/results.opencover.xml",
+                    "uri": "Tests/'/results/'.opencover.xml",
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
@@ -1224,7 +1120,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "20df3b0cec7007b7e6065e5109c1ea1df39b945117c439a743769fa7cd2d8b84"
+              "equalIndicator/v1": "47cbf7b553c80766e6c2b28f64e6fc2a5f067a66bf8f47ab3bf7d56de12ab359"
             },
             "properties": {
               "ideaSeverity": "ERROR",
@@ -1243,267 +1139,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "Tests/'/'.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 77.0,
-                    "startColumn": 159.0,
-                    "charOffset": 7474.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 75.0,
-                    "startColumn": 1.0,
-                    "charOffset": 7168.0,
-                    "charLength": 518.0,
-                    "snippet": {
-                      "text": "                <BranchPoint vc=\"0\" uspid=\"53\" ordinal=\"1\" path=\"1\" offset=\"9\" offsetend=\"23\" sl=\"53\" fileid=\"1\" />\r\n              </BranchPoints>\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"3\" offset=\"3\" sc=\"0\" sl=\"52\" ec=\"1\" el=\"65\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "2cad3ca2c8490e4d026e3f485feca5ece5dfc7dbcbaa00c021c32ac70aada818"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/'/'.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 28.0,
-                    "startColumn": 159.0,
-                    "charOffset": 2452.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 26.0,
-                    "startColumn": 1.0,
-                    "charOffset": 2229.0,
-                    "charLength": 435.0,
-                    "snippet": {
-                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"3\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"0\" offset=\"0\" sc=\"0\" sl=\"15\" ec=\"1\" el=\"20\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "300f5a431a6b65c621c0435f0ca59bf941ddd7d790d0775c72701ca7db7726dc"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/results.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 77.0,
-                    "startColumn": 159.0,
-                    "charOffset": 7474.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 75.0,
-                    "startColumn": 1.0,
-                    "charOffset": 7168.0,
-                    "charLength": 518.0,
-                    "snippet": {
-                      "text": "                <BranchPoint vc=\"0\" uspid=\"53\" ordinal=\"1\" path=\"1\" offset=\"9\" offsetend=\"23\" sl=\"53\" fileid=\"1\" />\r\n              </BranchPoints>\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"3\" offset=\"3\" sc=\"0\" sl=\"52\" ec=\"1\" el=\"65\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "46cf8de5e479bbd451b06bc97c9b041bc90571353bcc223468d8c0beb07af585"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/results.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 55.0,
-                    "startColumn": 159.0,
-                    "charOffset": 5167.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 53.0,
-                    "startColumn": 1.0,
-                    "charOffset": 4944.0,
-                    "charLength": 432.0,
-                    "snippet": {
-                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"2\" offset=\"2\" sc=\"0\" sl=\"45\" ec=\"1\" el=\"45\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"2\" nPathComplexity=\"2\" sequenceCoverage=\"0\" branchCoverage=\"0\" isConstructor=\"True\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "5518ed1834a3e4731c1b9049019a41ee20c884410f3ab6c68998272be386732a"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/'/'.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 96.0,
-                    "startColumn": 159.0,
-                    "charOffset": 9513.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 94.0,
-                    "startColumn": 1.0,
-                    "charOffset": 9290.0,
-                    "charLength": 276.0,
-                    "snippet": {
-                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"4\" offset=\"4\" sc=\"0\" sl=\"74\" ec=\"1\" el=\"90\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n          </Methods>\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "5f2896cfd8b028427f372669c43b50793f6619e0c69312acaa627dc76a339c24"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/'/'.opencover.xml",
+                    "uri": "Tests/'/results/'.opencover.xml",
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
@@ -1536,7 +1172,7 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "66d106bab1ffaf132cc9ac3fcff182f42e0053fb2cbeaaae7d8b95b1c28abff4"
+              "equalIndicator/v1": "527a741671a4763d3dbcf01dcc67ae983293930a1186427a5e3a960b2b9f6743"
             },
             "properties": {
               "ideaSeverity": "ERROR",
@@ -1555,111 +1191,7 @@
               {
                 "physicalLocation": {
                   "artifactLocation": {
-                    "uri": "Tests/results.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 44.0,
-                    "startColumn": 159.0,
-                    "charOffset": 4112.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 42.0,
-                    "startColumn": 1.0,
-                    "charOffset": 3889.0,
-                    "charLength": 435.0,
-                    "snippet": {
-                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"1\" offset=\"1\" sc=\"0\" sl=\"26\" ec=\"1\" el=\"38\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "8415233ef92bbfb216b42a65ed9f75b9b3c975f991b6e71b04f1cd9e09e92717"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/'/'.opencover.xml",
-                    "uriBaseId": "SRCROOT"
-                  },
-                  "region": {
-                    "startLine": 55.0,
-                    "startColumn": 159.0,
-                    "charOffset": 5167.0,
-                    "charLength": 3.0,
-                    "snippet": {
-                      "text": "xsi"
-                    },
-                    "sourceLanguage": "XML"
-                  },
-                  "contextRegion": {
-                    "startLine": 53.0,
-                    "startColumn": 1.0,
-                    "charOffset": 4944.0,
-                    "charLength": 432.0,
-                    "snippet": {
-                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"2\" offset=\"2\" sc=\"0\" sl=\"45\" ec=\"1\" el=\"45\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"2\" nPathComplexity=\"2\" sequenceCoverage=\"0\" branchCoverage=\"0\" isConstructor=\"True\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
-                    },
-                    "sourceLanguage": "XML"
-                  }
-                },
-                "logicalLocations": [
-                  {
-                    "fullyQualifiedName": "rider.module",
-                    "kind": "module"
-                  }
-                ]
-              }
-            ],
-            "partialFingerprints": {
-              "equalIndicator/v1": "90ce26f87c35a85f334b18b4cb09fb8e1439331c966d80a5016731d72b9767a1"
-            },
-            "properties": {
-              "ideaSeverity": "ERROR",
-              "qodanaSeverity": "Critical"
-            }
-          },
-          {
-            "ruleId": "XmlHighlighting",
-            "kind": "fail",
-            "level": "error",
-            "message": {
-              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
-              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
-            },
-            "locations": [
-              {
-                "physicalLocation": {
-                  "artifactLocation": {
-                    "uri": "Tests/results.opencover.xml",
+                    "uri": "Tests/'/results/'.opencover.xml",
                     "uriBaseId": "SRCROOT"
                   },
                   "region": {
@@ -1692,7 +1224,111 @@
               }
             ],
             "partialFingerprints": {
-              "equalIndicator/v1": "cde27819b2efd97bf2fe829333855ba1df6bfb0f6444ee800d09d6d5f57647dd"
+              "equalIndicator/v1": "696a2be0cc671704168c1047d57de40c48b796f0e850d53bd3806d46d66379d6"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/results/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 55.0,
+                    "startColumn": 159.0,
+                    "charOffset": 5167.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 53.0,
+                    "startColumn": 1.0,
+                    "charOffset": 4944.0,
+                    "charLength": 432.0,
+                    "snippet": {
+                      "text": "              </SequencePoints>\r\n              <BranchPoints />\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"2\" offset=\"2\" sc=\"0\" sl=\"45\" ec=\"1\" el=\"45\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"2\" nPathComplexity=\"2\" sequenceCoverage=\"0\" branchCoverage=\"0\" isConstructor=\"True\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "72aa1e42373b05fc9a22b44a00d20f354ca098266e67b842cecf252db998ee1d"
+            },
+            "properties": {
+              "ideaSeverity": "ERROR",
+              "qodanaSeverity": "Critical"
+            }
+          },
+          {
+            "ruleId": "XmlHighlighting",
+            "kind": "fail",
+            "level": "error",
+            "message": {
+              "text": "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)",
+              "markdown": "URI is not registered (Settings \\| Languages \\& Frameworks \\| Schemas and DTDs)"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "Tests/'/results/'.opencover.xml",
+                    "uriBaseId": "SRCROOT"
+                  },
+                  "region": {
+                    "startLine": 77.0,
+                    "startColumn": 159.0,
+                    "charOffset": 7474.0,
+                    "charLength": 3.0,
+                    "snippet": {
+                      "text": "xsi"
+                    },
+                    "sourceLanguage": "XML"
+                  },
+                  "contextRegion": {
+                    "startLine": 75.0,
+                    "startColumn": 1.0,
+                    "charOffset": 7168.0,
+                    "charLength": 518.0,
+                    "snippet": {
+                      "text": "                <BranchPoint vc=\"0\" uspid=\"53\" ordinal=\"1\" path=\"1\" offset=\"9\" offsetend=\"23\" sl=\"53\" fileid=\"1\" />\r\n              </BranchPoints>\r\n              <MethodPoint vc=\"0\" uspid=\"0\" p8:type=\"SequencePoint\" ordinal=\"3\" offset=\"3\" sc=\"0\" sl=\"52\" ec=\"1\" el=\"65\" bec=\"0\" bev=\"0\" fileid=\"1\" xmlns:p8=\"xsi\" />\r\n            </Method>\r\n            <Method cyclomaticComplexity=\"1\" nPathComplexity=\"1\" sequenceCoverage=\"0\" branchCoverage=\"100\" isConstructor=\"False\" isGetter=\"False\" isSetter=\"False\" isStatic=\"True\">\r"
+                    },
+                    "sourceLanguage": "XML"
+                  }
+                },
+                "logicalLocations": [
+                  {
+                    "fullyQualifiedName": "rider.module",
+                    "kind": "module"
+                  }
+                ]
+              }
+            ],
+            "partialFingerprints": {
+              "equalIndicator/v1": "735bd11566175fbc4b2be6efb45f5838c51a55b5e55b202e405a1a2d64d50c4f"
             },
             "properties": {
               "ideaSeverity": "ERROR",

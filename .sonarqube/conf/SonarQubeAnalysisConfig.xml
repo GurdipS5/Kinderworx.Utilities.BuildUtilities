@@ -177,7 +177,6 @@
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.46.0.54807" StaticResourceName="SonarAnalyzer-8.46.0.54807.zip">
@@ -186,12 +185,10 @@
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
-            <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="securitycsharpfrontend" Version="9.7.0.18030" StaticResourceName="SonarAnalyzer.Security-9.7.0.18030.zip">
           <AssemblyPaths>
-            <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\2\Google.Protobuf.License.txt</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\2\Microsoft.AspNetCore.Razor.Language.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\2\SonarAnalyzer.Security.dll</Path>
           </AssemblyPaths>
@@ -212,7 +209,6 @@
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.CSharp.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\SonarAnalyzer.dll</Path>
-            <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\0\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
         <AnalyzerPlugin Key="vbnet" Version="8.46.0.54807" StaticResourceName="SonarAnalyzer-8.46.0.54807.zip">
@@ -221,7 +217,6 @@
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.CFG.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.dll</Path>
             <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\SonarAnalyzer.VisualBasic.dll</Path>
-            <Path>C:\Users\Gurdip\AppData\Local\Temp\.sonarqube\resources\1\THIRD-PARTY-NOTICES.txt</Path>
           </AssemblyPaths>
         </AnalyzerPlugin>
       </AnalyzerPlugins>

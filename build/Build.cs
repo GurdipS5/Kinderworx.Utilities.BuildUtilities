@@ -51,6 +51,8 @@ class Build : NukeBuild
     [Solution]
     readonly Solution Solution;
 
+
+
     #region Project variables
 
     /// <summary>
@@ -84,6 +86,7 @@ class Build : NukeBuild
 
     #region NetCoreBuild
 
+    public string framework = "net8.0";
     string SelfContained = string.Empty;
     string runtime = "win-x64";
 
@@ -520,6 +523,13 @@ class Build : NukeBuild
         .Executes(() =>
         {
             Qodana($"scan --ide QDNET --results-dir {QodanaOut} --report-dir {QodanaReport} --cache-dir {QodanaCache}");
+
+            if (NukeBuild.IsServerBuild)
+            {
+                string qodanaPath = Path.Combine(Artifacts, "qodana.zip");
+                BuildUtils.ZipDirectory(QodanaReport, qodanaPath);
+                Console.WriteLine($"##teamcity[publishArtifacts '{qodanaPath}']");
+            }
         });
 
     /// <summary>
@@ -537,7 +547,7 @@ class Build : NukeBuild
             if (IsServerBuild)
             {
                 BuildUtils.ZipDirectory(NDependOutput, ndependPath);
-                Console.WriteLine($"##teamcity[publishArtifacts '{NDependOutput}']");
+                Console.WriteLine($"##teamcity[publishArtifacts '{ndependPath}']");
             }
         });
 
@@ -857,5 +867,5 @@ class Build : NukeBuild
         Directory.Delete(NukeOut, true);
     }
 
-    public string framework = "net8.0";
+
 }
