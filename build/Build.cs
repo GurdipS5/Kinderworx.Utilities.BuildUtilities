@@ -510,6 +510,9 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
+
+            Log.Information(utilsProjectDir);
+
             DotNet($"outdated {utilsProjectDir}");
         });
 
