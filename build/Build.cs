@@ -510,7 +510,7 @@ class Build : NukeBuild
         .AssuredAfterFailure()
         .Executes(() =>
         {
-            DotNet($"outdated {RootDirectory}");
+            DotNet($"outdated {utilsProjectDir}");
         });
 
     /// <summary>
@@ -574,7 +574,6 @@ class Build : NukeBuild
         {
             if (IsLocalBuild || (IsServerBuild && !Repository.IsOnMainOrMasterBranch()))
             {
-
                 var dbDailyTasks = await Cli.Wrap("powershell")
                   .WithArguments(new string[] { "nbgv get-version | ConvertTo-JSON" })
                   .ExecuteBufferedAsync();
@@ -633,11 +632,11 @@ class Build : NukeBuild
             PlogConverter($@"-t Html -o {PvsStudio} -n PVS-Log {pvsfile}");
 
 
-
                 if (IsServerBuild)
                 {
-                    BuildUtils.ZipDirectory(NDependOutput, pvsPath);
-                }
+                    BuildUtils.ZipDirectory(PvsStudio, pvsPath);
+                    Console.WriteLine($"##teamcity[publishArtifacts '{pvsPath}']");
+            }
         });
 
     /// <summary>
