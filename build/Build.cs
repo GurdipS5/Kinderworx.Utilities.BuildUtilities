@@ -437,6 +437,7 @@ class Build : NukeBuild
 
             utilsProjectName = "Kinderworx.Utilities.BuildUtilities";
             utilsProjectPath = Solution.GetProject(utilsProjectName).Path;
+            utilsProjectDir = Solution.GetProject(utilsProjectName).Directory;
 
             Log.Information(utilsProjectName);
             Log.Information(utilsProjectPath);

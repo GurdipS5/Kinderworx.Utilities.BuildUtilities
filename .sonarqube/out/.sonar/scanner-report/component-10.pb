@@ -1,2 +1,2 @@
 
- (2xmlXghrTests/results.opencover.xml
+ 2csX\hr1Kinderworx.Utilities.BuildUtilities/BuildUtils.cs
