@@ -439,9 +439,7 @@ class Build : NukeBuild
             utilsProjectPath = Solution.GetProject(utilsProjectName).Path;
             utilsProjectDir = Solution.GetProject(utilsProjectName).Directory;
 
-            Log.Information(utilsProjectName);
-            Log.Information(utilsProjectPath);
-            Log.Information(Solution.GetProject(utilsProjectName).Path);
+
         });
 
     /// <summary>
