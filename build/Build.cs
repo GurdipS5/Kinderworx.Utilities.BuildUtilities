@@ -497,7 +497,7 @@ class Build : NukeBuild
         {
             if (IsLocalBuild)
             {
-                GgShield($"--config-path {GgConfig} secret scan commit-range HEAD~1");
+                GgShield($"--config-path {GgConfig} secret scan commit-range HEAD~1", @"C:\Users\Gurdip\AppData\Roaming\Python\Python311\Scripts");
             }
         });
 
